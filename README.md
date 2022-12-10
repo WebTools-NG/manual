@@ -4,4 +4,4 @@ Explore the site at your will.
 
 Go there now!
 
-https://github.com/WebTools-NG/manual
+[https://github.com/WebTools-NG/manual](https://webtools-ng.github.io/manual/)
