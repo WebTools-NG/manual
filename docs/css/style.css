@@ -32,6 +32,32 @@
 @import url(nice-select.css);
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+    }
+    
+    a:visited {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    .bolded { font-weight: bold; }
+    .emphasized { font-style: italic; }
 
 * {
     box-sizing: border-box !important;
