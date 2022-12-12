@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>Plex.TV module</title>
+    <title>Network List</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -124,25 +124,165 @@
     <!-- table section start -->
       <div class="services_section layout_padding">
         <div class="container">
-          <h1 class="services_taital">Plex.TV module</h1>
-          <h2><a href="menu.html">Main Menu</a></h2>
-          <p>The Plex.TV module allows you to identify anyone you have shared your Plex Media Server/s with.</p>
-          <p>Simply select the users name from the <code style="color:Tomato; font-size: 16px;">Select User</code> drop down menu and you will be presented with the details of that user.</p>
-          <hr>
-          <p><img src="images/modules/plex-tv/plex-tv-01.png" alt=""></p>
-
-          <p><span class="bolded">Note: * Click here for general settings regarding export *</span><br>
-          Click on this link to take you to the Gloabl Settings &gt; <a href="export-settings.html">Export Settings</a> page</p>
-
-          <p><span class="bolded">Export user to CSV</span><br>
-          Click on this button to save the users details to a .csv/.xlsx file</p>
-
-          <p><span class="bolded">Export all users to CSV</span><br>
-          Click on this button to save all users and their details to a .csv/.xlsx file.</p>
-          <hr>
-          <p>See the <a href="help.html">Help</a> page for details on creating a custom level and exporting Art &amp; Posters from a Movies library.<br>
-          See the <a href="help.html">Help</a> page for details on importing a .csv file into Microsoft Excel.<br>
-          See the <a href="help.html">Help</a> page for details on setting the Default Column Separator for Microsoft Excel in Windows 10.</p>      
+          <h1 class="services_taital">Network List</h1>
+          <h2><a href="server-settings-list.html">Server Settings List</a></h2>
+          <h1 id="plex-media-server---server-settings-group---network">Plex Media Server - Server Settings Group - Network</h1>
+<p>For more information regarding these settings, please visit the <a href="https://support.plex.tv/articles/201105343-advanced-hidden-server-settings/">Plex Advanced/Hidden server settings</a> page or ask on the <a href="https://forums.plex.tv/">Plex Forums</a> if you wish to know more about these hidden/advanced settings.</p>
+<hr>
+<h3 id="settings-group-network">Settings Group: network</h3>
+<table>
+<tr>
+<td><b>Name</b></td>
+<td><b>Label</b></td>
+<td><b>Summary</b></td>
+<td><b>Type</b></td>
+<td><b>Default</b></td>
+<td><b>Value</b></td>
+</tr>
+<tr>
+<td>ConfigurationUrl</td>
+<td>Web Manager URL</td>
+<td></td>
+<td>text</td>
+<td>http://127.0.0.1:32400/web</td>
+<td>http://127.0.0.1:32400/web</td>
+</tr>
+<tr>
+<td>EnableIPv6</td>
+<td>Enable server support for IPv6</td>
+<td></td>
+<td>bool</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>secureConnections</td>
+<td>Secure connections</td>
+<td>When set to "Required", some unencrypted connections (originating from the Media Server computer) will still be allowed and apps that don't support secure connections will not be able to connect at all.</td>
+<td>int</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>customCertificatePath</td>
+<td>Custom certificate location</td>
+<td>Path to a PKCS #12 file containing a certificate and private key to enable TLS support on a custom domain.</td>
+<td>text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>customCertificateKey</td>
+<td>Custom certificate encryption key</td>
+<td></td>
+<td>text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>customCertificateDomain</td>
+<td>Custom certificate domain</td>
+<td>Domain name to be published to plex.tv using your mapped port; must match a name from the custom certificate file.</td>
+<td>text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PreferredNetworkInterface</td>
+<td>Preferred network interface</td>
+<td>The network interface local clients will use to connect.</td>
+<td>text</td>
+<td></td>
+<td>bond0</td>
+</tr>
+<tr>
+<td>DisableTLSv1_0</td>
+<td>Strict TLS configuration</td>
+<td>Disables legacy weak ciphers, increases DH group size, and switches to ECDSA certificates when renewing. May prevent older clients from connecting.</td>
+<td>bool</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>allowedHttpOrigins</td>
+<td></td>
+<td></td>
+<td>text</td>    
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>GdmEnabled</td>
+<td>Enable local network discovery (GDM)</td>
+<td>This enables the media server to discover other servers and players on the local network.</td>
+<td>bool</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>WanPerUserStreamCount</td>
+<td>Remote streams allowed per user</td>
+<td>Maximum number of simultaneous streams each user is allowed when not on the local network.</td>
+<td>int</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>LanNetworksBandwidth</td>
+<td>LAN Networks</td>
+<td>Comma separated list of IP addresses or IP/netmask entries for networks that will be considered to be on the local network when enforcing bandwidth restrictions. If set, all other IP addresses will be considered to be on the external network and will be subject to external network bandwidth restrictions. If left blank, only the server's subnet is considered to be on the local network.</td>
+<td>text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MinutesAllowedPaused</td>
+<td>Terminate Sessions Paused for Longer Than</td>
+<td>Value is in minutes. Terminate any sessions which have been paused for a longer time than specified amount of time. Audio-only sessions and live sessions are excluded</td>
+<td>int</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TreatWanIpAsLocal</td>
+<td>Treat WAN IP As LAN Bandwidth</td>
+<td>Treat incoming requests from this network's WAN IP address as LAN requests in terms of bandwidth. This often occurs when DNS rebinding protection is in place and clients on the LAN cannot contact the server directly but instead have to go through the WAN IP address.</td>
+<td>bool</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>RelayEnabled</td>
+<td>Enable Relay</td>
+<td>The Relay allows connections to the server through a proxy relay when the server is not accessible otherwise. Note: this proxy relay is bandwidth limited</td>
+<td>bool</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>customConnections</td>
+<td>Custom server access URLs</td>
+<td>A comma-separated list of URLs (http or https) which are published up to plex.tv for server discovery.</td>
+<td>text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>allowedNetworks</td>
+<td>List of IP addresses and networks that are allowed without auth</td>
+<td>Comma separated list of IP addresses or IP/netmask entries for networks that are allowed to access Plex Media Server without logging in. When the server is signed out and this value is set, only localhost and addresses on this list will be allowed.</td>
+<td>text</td>
+<td>192.168.0.0/24</td>
+<td></td>
+</tr>
+<tr>
+<td>WebHooksEnabled</td>
+<td>Webhooks</td>
+<td>Allow this server to send events to external services.</td>    <td>bool</td>
+<td>true</td>
+<td>false</td>
+</tr>
+</table>
           <!-- table section end -->
         </div>
       </div>

@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>Plex.TV module</title>
+    <title>Channels List</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -124,25 +124,54 @@
     <!-- table section start -->
       <div class="services_section layout_padding">
         <div class="container">
-          <h1 class="services_taital">Plex.TV module</h1>
-          <h2><a href="menu.html">Main Menu</a></h2>
-          <p>The Plex.TV module allows you to identify anyone you have shared your Plex Media Server/s with.</p>
-          <p>Simply select the users name from the <code style="color:Tomato; font-size: 16px;">Select User</code> drop down menu and you will be presented with the details of that user.</p>
-          <hr>
-          <p><img src="images/modules/plex-tv/plex-tv-01.png" alt=""></p>
-
-          <p><span class="bolded">Note: * Click here for general settings regarding export *</span><br>
-          Click on this link to take you to the Gloabl Settings &gt; <a href="export-settings.html">Export Settings</a> page</p>
-
-          <p><span class="bolded">Export user to CSV</span><br>
-          Click on this button to save the users details to a .csv/.xlsx file</p>
-
-          <p><span class="bolded">Export all users to CSV</span><br>
-          Click on this button to save all users and their details to a .csv/.xlsx file.</p>
-          <hr>
-          <p>See the <a href="help.html">Help</a> page for details on creating a custom level and exporting Art &amp; Posters from a Movies library.<br>
-          See the <a href="help.html">Help</a> page for details on importing a .csv file into Microsoft Excel.<br>
-          See the <a href="help.html">Help</a> page for details on setting the Default Column Separator for Microsoft Excel in Windows 10.</p>      
+          <h1 class="services_taital">Channels List</h1>
+          <h2><a href="server-settings-list.html">Server Settings List</a></h2>
+          <h1 id="plex-media-server---server-settings-group---channels">Plex Media Server - Server Settings Group - Channels</h1>
+<p>For more information regarding these settings, please visit the <a href="https://support.plex.tv/articles/201105343-advanced-hidden-server-settings/">Plex Advanced/Hidden server settings</a> page or ask on the <a href="https://forums.plex.tv/">Plex Forums</a> if you wish to know more about these hidden/advanced settings.</p>
+<hr>
+<h3 id="settings-group-channels">Settings Group: channels</h3>
+<table>
+<tr>
+<td><b>Name</b></td>
+<td><b>Label</b></td>
+<td><b>Summary</b></td>
+<td><b>Type</b></td>
+<td><b>Default</b></td>
+<td><b>Value</b></td>
+</tr>
+<tr>
+<td>iTunesSharingEnabled</td>
+<td>Enable iTunes plugin</td>
+<td>A server restart is required for a change to take effect.</td>
+<td>bool</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>iTunesLibraryXmlPath</td>
+<td>iTunes library XML path</td>
+<td></td>
+<td>text</td>
+<td></td>
+<td>/volume1/iTunes/iTunes Music Library.xml</td>
+</tr>
+<tr>
+<td>disableCapabilityChecking</td>
+<td>Disable capability checking</td>
+<td>Capability checking ensures that plug-ins that are incompatible with this version of the server or the current client application you are using are hidden. Disabling capability checking is useful during development, but will enable access to plug-ins that may perform unreliably with certain client applications.</td>
+<td>bool</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>PluginsLaunchTimeout</td>
+<td>Number of seconds to wait before a plugin times out</td>
+<td></td>
+<td>int</td>
+<td>180</td>
+<td>180</td>
+</tr>
+</table>
           <!-- table section end -->
         </div>
       </div>

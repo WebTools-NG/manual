@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>Plex.TV module</title>
+    <title>Library List</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -124,25 +124,198 @@
     <!-- table section start -->
       <div class="services_section layout_padding">
         <div class="container">
-          <h1 class="services_taital">Plex.TV module</h1>
-          <h2><a href="menu.html">Main Menu</a></h2>
-          <p>The Plex.TV module allows you to identify anyone you have shared your Plex Media Server/s with.</p>
-          <p>Simply select the users name from the <code style="color:Tomato; font-size: 16px;">Select User</code> drop down menu and you will be presented with the details of that user.</p>
-          <hr>
-          <p><img src="images/modules/plex-tv/plex-tv-01.png" alt=""></p>
-
-          <p><span class="bolded">Note: * Click here for general settings regarding export *</span><br>
-          Click on this link to take you to the Gloabl Settings &gt; <a href="export-settings.html">Export Settings</a> page</p>
-
-          <p><span class="bolded">Export user to CSV</span><br>
-          Click on this button to save the users details to a .csv/.xlsx file</p>
-
-          <p><span class="bolded">Export all users to CSV</span><br>
-          Click on this button to save all users and their details to a .csv/.xlsx file.</p>
-          <hr>
-          <p>See the <a href="help.html">Help</a> page for details on creating a custom level and exporting Art &amp; Posters from a Movies library.<br>
-          See the <a href="help.html">Help</a> page for details on importing a .csv file into Microsoft Excel.<br>
-          See the <a href="help.html">Help</a> page for details on setting the Default Column Separator for Microsoft Excel in Windows 10.</p>      
+          <h1 class="services_taital">Library List</h1>
+          <h2><a href="server-settings-list.html">Server Settings List</a></h2>
+          <h1 id="plex-media-server---server-settings-group---library">Plex Media Server - Server Settings Group - Library</h1>
+<p>For more information regarding these settings, please visit the <a href="https://support.plex.tv/articles/201105343-advanced-hidden-server-settings/">Plex Advanced/Hidden server settings</a> page or ask on the <a href="https://forums.plex.tv/">Plex Forums</a> if you wish to know more about these hidden/advanced settings.</p>
+<hr>
+<h3 id="settings-group-library">Settings Group: library</h3>
+<table>
+<tr>
+<td><b>Name</b></td>
+<td><b>Label</b></td>
+<td><b>Summary</b></td>
+<td><b>Type</b></td>
+<td><b>Default</b></td>
+<td><b>Value</b></td>
+</tr>
+<tr>
+<td>FSEventLibraryUpdatesEnabled</td>
+<td>Scan my library automatically</td>
+<td>Your library will be updated automatically when changes to library folders are detected.</td>
+<td>bool</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>FSEventLibraryPartialScanEnabled</td>
+<td>Run a partial scan when changes are detected</td>
+<td>When changes to library folders are detected, only scan the folder that changed.</td>
+<td>bool</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>watchMusicSections</td>
+<td>Include music libraries in automatic updates</td>
+<td>Linux systems limit the maximum number of watched directories; this may cause problems with large music libraries.</td>
+<td>bool</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>ScheduledLibraryUpdatesEnabled</td>
+<td>Scan my library periodically</td>
+<td></td>
+<td>bool</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>ScheduledLibraryUpdateInterval</td>
+<td>Library scan interval</td>
+<td></td>
+<td>int</td>
+<td>3600</td>
+<td>3600</td>
+</tr>
+<tr>
+<td>autoEmptyTrash</td>
+<td>Empty trash automatically after every scan</td>
+<td></td>
+<td>bool</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>allowMediaDeletion</td>
+<td>Allow media deletion</td>
+<td>The owner of the server will be allowed to delete media files from disk.</td>
+<td>bool</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>allowMediaDeletionLanOnly</td>
+<td></td>
+<td></td>
+<td>bool</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>OnDeckWindow</td>
+<td>Weeks to consider for Continue Watching</td>
+<td>Media that has not been watched in this many weeks will not appear in Continue Watching.</td>
+<td>int</td>
+<td>16</td>
+<td>16</td>
+</tr>
+<tr>
+<td>OnDeckLimit</td>
+<td>Maximum number of Continue Watching items which will appear.</td>
+<td>Limits the number of shows which will appear Continue Watching. Setting it too high can affect performance.</td>
+<td>int</td>
+<td>40</td>
+<td>40</td>
+</tr>
+<tr>
+<td>OnDeckIncludePremieres</td>
+<td>Include season premieres in Continue Watching</td>
+<td>New season premieres will always appear no matter how many weeks have passed since watching.</td>
+<td>bool</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>SmartShuffleMusic</td>
+<td>Enable smart shuffling on artists and smart music playlists</td>
+<td>Smart shuffling prefers highly rated, popular and less recently heard tracks.</td>
+<td>bool</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>MusicSeparateAlbumTypes</td>
+<td>Group albums by type</td>
+<td>Group into LPs, EPs & Singles, Compilations, Live Albums, Demos and Remixes.</td>
+<td>text</td>
+<td>enabled</td>
+<td>disabled</td>
+</tr>
+<tr>
+<td>LibraryDefaultVisibility</td>
+<td></td>
+<td></td>
+<td>int</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>ScannerLowPriority</td>
+<td>Run scanner tasks at a lower priority</td>
+<td></td>
+<td>bool</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>GenerateBIFBehavior</td>
+<td>Generate video preview thumbnails</td>
+<td>Video preview thumbnails provide live updates in Now Playing and while seeking on supported apps. Thumbnail generation may take a long time, cause high CPU usage, and consume additional disk space. You can turn off thumbnail generation for individual libraries in the library's advanced settings.</td>
+<td>text</td>
+<td>never</td>
+<td>never</td>
+</tr>
+<tr>
+<td>GenerateBIFFrameInterval</td>
+<td>Video preview thumbnail frame duration</td>
+<td>The time (in seconds) between each video preview frame.</td>
+<td>int</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>GenerateIntroMarkerBehavior</td>
+<td>Generate intro video markers</td>
+<td>Detects show intros, exposing the 'Skip Intro' button in clients.</td>
+<td>text</td>
+<td>asap</td>
+<td>never</td>
+</tr>
+<tr>
+<td>GenerateChapterThumbBehavior</td>
+<td>Generate chapter thumbnails</td>
+<td>Chapter thumbnails provide images in the chapter view on supported apps. They can take a long time to generate and consume additional disk space.</td>
+<td>text</td>
+<td>scheduled</td>
+<td>never</td>
+</tr>
+<tr>
+<td>LoudnessAnalysisBehavior</td>
+<td>Analyze audio tracks for loudness</td>
+<td>Loudness analysis allows various features, such as loudness leveling and smart transitions. It can take a long time to complete when analyzing many tracks, and cause high CPU usage.</td>
+<td>text</td>
+<td>scheduled</td>
+<td>asap</td>
+</tr>
+<tr>
+<td>MusicAnalysisBehavior</td>
+<td>Analyze audio tracks for sonic features</td>
+<td>Sonic analysis allows various features, such as track radio. It can take a long time to complete when analyzing many tracks, and cause high CPU usage.</td>
+<td>text</td>
+<td>scheduled</td>
+<td>never</td>
+</tr>
+<tr>
+<td>LocationVisibility</td>
+<td>Location visibility</td>
+<td>Server owners may wish to restrict who can see location names for items which contain geolocation metadata. By default only the server owner will have visibility of these.</td>
+<td>int</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</table>
           <!-- table section end -->
         </div>
       </div>
