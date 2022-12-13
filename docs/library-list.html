@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>Info</title>
+    <title>Library List</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -124,72 +124,198 @@
     <!-- table section start -->
       <div class="services_section layout_padding">
         <div class="container">
-          <h1 class="services_taital">Info</h1>
-          <h2><a href="menu.html">Main Menu</a></h2>
-          <br>
-          <h2>License</h2>
-          <p>The license for this app is `Mozilla Public License 2.0`<br>
-          You may read about this license, <a href=">https://github.com/WebTools-NG/WebTools-NG/blob/master/LICENSE">here</a></p>
-          <hr>
-          <h2>Beta Testing</h2>
-          <p>Yes, we do have a Beta Testing program, and that&#39;s your chance to not only try out the bleeding edge of WebTools-NG, but also help us help the Plex community as a whole.
-            Besides that, you as a Beta tester also engage directly with the developers of WebTools-NG, so if something is on your mind regarding WebTools-NG, then this is indeed the place to be.</p>
-            <p>If you want to participate in the beta program for WebTools-NG, then it does involve a few things:</p>
-            <h3 id="requirements">Requirements</h3>
-
-            <p>- You must accept, that this is beta software!<br>
-            - You must sign up for our Slack <a href="https://join.slack.com/t/webtools-ng/shared_invite/zt-h4opzgkh-Ge_AA86xuxqoORnDxD3AwA">here</a><br>
-            - You must <a href="https://github.com/join?source=header-repo">create a GitHub account</a>, if you do not already have one</li>
-            - You must sign up for our translation site <a href="https://poeditor.com/join/project?hash=yFjdfkDfup">here</a><br>
-            - Note that this is regardless of whether or not you do any translations. We use this information for our Credits page</p>
-
-            <p>You must download the current WebTools beta. (Link is available in Slack)</p>
-
-            <h3 id="requirements">Language</h3>
-
-            <p>You should test WebTools in your native language<br>
-            If a translation is not correct, you should correct it at the <a href="https://poeditor.com/join/project?hash=yFjdfkDfup">translation site</a><br>
-            If your language is missing, you should create and translate it at the <a href="https://poeditor.com/join/project?hash=yFjdfkDfup">translation site</a></p>
-            <p>Languages that have been translated, or are in the process of being translated:</p>
-            <p>Arabic<br>
-            Chinese<br>
-            Danish<br>
-            Dutch<br>
-            English<br>
-            French<br>
-            German<br>
-            Hungarian<br>
-            Italian<br>
-            Polish<br>
-            Portuguese (BR)<br>
-            Russian<br>
-            Spanish<br>
-            Swedish</p>
-
-            <h3>Testing</h3>
-
-            <p>You should test as many functions of WebTools-NG as possible</p>
-
-            <h3>Bug Reporting</h3>
-
-            <p>If you are facing a bug, and it&#39;s not listed <a href="https://github.com/WebTools-NG/WebTools-NG/issues?q=is%3Aopen+is%3Aissue">here</a>, then you must create a new [BUG] Issue report</p>
-
-            <h3>Feature Requests</h3>
-
-            <p>If you have a feature you would like to see included in WebTools-NG, or you have any suggestions for enhancements to existing features and they are not listed <a href="https://github.com/WebTools-NG/WebTools-NG/issues?q=is%3Aopen+is%3Aissue">here</a>, then please create a new [RFE] Issue report</p>
-
-            <h3>Questions</h3>
-
-            <p>Start by checking the <a href="https://github.com/WebTools-NG/WebTools-NG/wiki">Wiki</a> first please<br>
-            If you still have a question during beta testing, it should be asked in our Slack beta-v3 channel</p>
-
-            <h3 id="credits">Credits</h3>
-            <p>If you sign up for the beta, you will be mentioned in the <code>About Us</code> page of WebTools-NG, with the name you use for our translation site, unless you opt out of that.<br>
-            We hope everyone enjoys WebTools-NG and we would like to thank all of those people who have contributed to making WebTools-NG a great tool.</p>
-            
-            <h3 id="catch">Catch!</h3>
-            <p>If you simply sign up, but neither participate in the beta-testing, nor translate, then you will be removed from the credit list after ~ 3 weeks, this is to ensure, that only people that participate get any credit!<br>
-            Thank You! 👍</p>
+          <h1 class="services_taital">Library List</h1>
+          <h2><a href="server-settings-list.html">Server Settings List</a></h2>
+          <h1 id="plex-media-server---server-settings-group---library">Plex Media Server - Server Settings Group - Library</h1>
+<p>For more information regarding these settings, please visit the <a href="https://support.plex.tv/articles/201105343-advanced-hidden-server-settings/">Plex Advanced/Hidden server settings</a> page or ask on the <a href="https://forums.plex.tv/">Plex Forums</a> if you wish to know more about these hidden/advanced settings.</p>
+<hr>
+<h3 id="settings-group-library">Settings Group: library</h3>
+<table>
+<tr>
+<td><b>Name</b></td>
+<td><b>Label</b></td>
+<td><b>Summary</b></td>
+<td><b>Type</b></td>
+<td><b>Default</b></td>
+<td><b>Value</b></td>
+</tr>
+<tr>
+<td>FSEventLibraryUpdatesEnabled</td>
+<td>Scan my library automatically</td>
+<td>Your library will be updated automatically when changes to library folders are detected.</td>
+<td>bool</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>FSEventLibraryPartialScanEnabled</td>
+<td>Run a partial scan when changes are detected</td>
+<td>When changes to library folders are detected, only scan the folder that changed.</td>
+<td>bool</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>watchMusicSections</td>
+<td>Include music libraries in automatic updates</td>
+<td>Linux systems limit the maximum number of watched directories; this may cause problems with large music libraries.</td>
+<td>bool</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>ScheduledLibraryUpdatesEnabled</td>
+<td>Scan my library periodically</td>
+<td></td>
+<td>bool</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>ScheduledLibraryUpdateInterval</td>
+<td>Library scan interval</td>
+<td></td>
+<td>int</td>
+<td>3600</td>
+<td>3600</td>
+</tr>
+<tr>
+<td>autoEmptyTrash</td>
+<td>Empty trash automatically after every scan</td>
+<td></td>
+<td>bool</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>allowMediaDeletion</td>
+<td>Allow media deletion</td>
+<td>The owner of the server will be allowed to delete media files from disk.</td>
+<td>bool</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>allowMediaDeletionLanOnly</td>
+<td></td>
+<td></td>
+<td>bool</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>OnDeckWindow</td>
+<td>Weeks to consider for Continue Watching</td>
+<td>Media that has not been watched in this many weeks will not appear in Continue Watching.</td>
+<td>int</td>
+<td>16</td>
+<td>16</td>
+</tr>
+<tr>
+<td>OnDeckLimit</td>
+<td>Maximum number of Continue Watching items which will appear.</td>
+<td>Limits the number of shows which will appear Continue Watching. Setting it too high can affect performance.</td>
+<td>int</td>
+<td>40</td>
+<td>40</td>
+</tr>
+<tr>
+<td>OnDeckIncludePremieres</td>
+<td>Include season premieres in Continue Watching</td>
+<td>New season premieres will always appear no matter how many weeks have passed since watching.</td>
+<td>bool</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>SmartShuffleMusic</td>
+<td>Enable smart shuffling on artists and smart music playlists</td>
+<td>Smart shuffling prefers highly rated, popular and less recently heard tracks.</td>
+<td>bool</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>MusicSeparateAlbumTypes</td>
+<td>Group albums by type</td>
+<td>Group into LPs, EPs & Singles, Compilations, Live Albums, Demos and Remixes.</td>
+<td>text</td>
+<td>enabled</td>
+<td>disabled</td>
+</tr>
+<tr>
+<td>LibraryDefaultVisibility</td>
+<td></td>
+<td></td>
+<td>int</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>ScannerLowPriority</td>
+<td>Run scanner tasks at a lower priority</td>
+<td></td>
+<td>bool</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>GenerateBIFBehavior</td>
+<td>Generate video preview thumbnails</td>
+<td>Video preview thumbnails provide live updates in Now Playing and while seeking on supported apps. Thumbnail generation may take a long time, cause high CPU usage, and consume additional disk space. You can turn off thumbnail generation for individual libraries in the library's advanced settings.</td>
+<td>text</td>
+<td>never</td>
+<td>never</td>
+</tr>
+<tr>
+<td>GenerateBIFFrameInterval</td>
+<td>Video preview thumbnail frame duration</td>
+<td>The time (in seconds) between each video preview frame.</td>
+<td>int</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>GenerateIntroMarkerBehavior</td>
+<td>Generate intro video markers</td>
+<td>Detects show intros, exposing the 'Skip Intro' button in clients.</td>
+<td>text</td>
+<td>asap</td>
+<td>never</td>
+</tr>
+<tr>
+<td>GenerateChapterThumbBehavior</td>
+<td>Generate chapter thumbnails</td>
+<td>Chapter thumbnails provide images in the chapter view on supported apps. They can take a long time to generate and consume additional disk space.</td>
+<td>text</td>
+<td>scheduled</td>
+<td>never</td>
+</tr>
+<tr>
+<td>LoudnessAnalysisBehavior</td>
+<td>Analyze audio tracks for loudness</td>
+<td>Loudness analysis allows various features, such as loudness leveling and smart transitions. It can take a long time to complete when analyzing many tracks, and cause high CPU usage.</td>
+<td>text</td>
+<td>scheduled</td>
+<td>asap</td>
+</tr>
+<tr>
+<td>MusicAnalysisBehavior</td>
+<td>Analyze audio tracks for sonic features</td>
+<td>Sonic analysis allows various features, such as track radio. It can take a long time to complete when analyzing many tracks, and cause high CPU usage.</td>
+<td>text</td>
+<td>scheduled</td>
+<td>never</td>
+</tr>
+<tr>
+<td>LocationVisibility</td>
+<td>Location visibility</td>
+<td>Server owners may wish to restrict who can see location names for items which contain geolocation metadata. By default only the server owner will have visibility of these.</td>
+<td>int</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</table>
           <!-- table section end -->
         </div>
       </div>

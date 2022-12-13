@@ -54,12 +54,12 @@
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="install.html">Install</a>                    
+                        </li>                        
+                        <li class="nav-item">
+                           <a class="nav-link" href="configure.html">Configure</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link " href="configure.html">Settings</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="modules.html">Modules</a>
+                           <a class="nav-link" href="menu.html">Main Menu</a>
                         </li>                        
                         <li class="nav-item">
                            <a class="nav-link " href="help.html">Help</a>
@@ -81,7 +81,7 @@
                      <li class="active"><a href="index.html">Home</a></li>
                      <li><a href="install.html">Install</a></li>
                      <li><a href="configure.html">Configure</a></li>
-                     <li><a href="modules.html">Modules</a></li>
+                     <li><a href="menu.html">Main Menu</a></li>
                      <li><a href="help.html">Help</a></li>
                      <li><a href="info.html">Info</a></li>
                      <li><a href="about.html">About Us</a></li>
@@ -95,6 +95,7 @@
       <div class="services_section layout_padding">
          <div class="container">
             <h1 class="services_taital">Installation</h1>
+            <h2><a href="menu.html">Main Menu</a></h2>
             <p>To install WebTools-NG, simply download the package required for your PC/Laptop's OS (Windows/Mac/Linux).</p>
             <p>After downloading the WebTools-NG Installer package, install the package as required by your OS.</p>
             <p><span class="bolded">For Windows:</span><br>
@@ -130,7 +131,7 @@
             <p><img src="images/login-01.png"></p>
             <p>Enter your Plex Username, Plex Password and if you have enabled 2FA for Plex, enter your 2FA verification code, then click on `Sign In`. You will then be taken to the WebTools-NG Welcome page.</p>
 
-            <span class="bolded">Note:</span> <span class="emphasized">Using this method, the username will be saved if you enable the Save Username checkbox, but you will need to enter the password and 2FA code<br>
+            <p><span class="bolded">Note:</span> <span class="emphasized">Using this method, the username will be saved if you enable the Save Username checkbox, but you will need to enter the password and 2FA code<br>
             (if you have 2FA enabled) each time you open WebTools-NG.</span></p>
 
             <h3>Token tab</h3>
@@ -140,7 +141,7 @@
             <p><img src="images/loginwithtoken-01.png"></p>
             <p>Enter your Plex Token and then click on `Sign In`. You will then be taken to the WebTools-NG Welcome page.</p>
             <p>To find your Plex Token, see this page: <a href="https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/">Finding a Plex authentication token</a></p>
-            <span class="bolded">Note:</span> <span class="emphasized">Entering your Plex Token overrides the need to enter a password and a code to authenticate a 2FA login.</span></p>
+            <p><span class="bolded">Note:</span> <span class="emphasized">Entering your Plex Token overrides the need to enter a password and a code to authenticate a 2FA login.</span></p>
 
             <hr />
 
@@ -154,7 +155,7 @@
             <p>The command may be added to a batch or script file to save entering the Plex token each time. You may then simply &#39;run&#39; the batch/script file each time you wish to open WebTools-NG.</p>
             <p>You should use this method with caution, particularly if you add the commands to a script/batch file, as it may lead to any person/user or intruder having full access to your Plex Media Server/s.</p>
             <p>To find your Plex Token, see this page: <a href="https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/">Finding a Plex authentication token</a></p>
-            <span class="bolded">Note:</span> <span class="emphasized">Using this method removes the need to enter a password &amp; code for 2FA logins.</span></p>
+            <p><span class="bolded">Note:</span> <span class="emphasized">Using this method removes the need to enter a password &amp; code for 2FA logins.</span></p>
             <hr>
             <h3 id="for-windows">For Windows:</h3>
             <p>Open a Command Prompt or Windows Terminal window and <span class="bolded">cd</span> to the location of WebTools-NG.exe on your PC, then enter the following:</p>
@@ -162,21 +163,21 @@
             <p>The default installation folder is: <code style="color:Tomato; font-size: 16px;">C:\Users\**Your User Name**\AppData\Local\Programs\webtools-ng</code></p>
             <p><span class="bolded">Note:</span> <span class="emphasized">The token shown above is bogus and will not work, you must use your own Plex token.</span></p>
             <p>To find your Plex Token, see this page: <a href="https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/">Finding a Plex authentication token</a></p>
-            <span class="bolded">Note:</span> <span class="emphasized">Using this method removes the need to enter a password &amp; code for 2FA logins.</span>
+            <p><span class="bolded">Note:</span> <span class="emphasized">Using this method removes the need to enter a password &amp; code for 2FA logins.</span></p>
             <hr>
             <h3 id="for-mac">For Mac:</h3>
             <p>Open a Terminal window and enter the following:</p>
             <p><code style="color:Tomato; font-size: 16px;">/Applications/WebTools-NG.app/Contents/MacOS/WebTools-NG X-Plex-Token=gfhjguhyt7466753wjhgdf</code></p>
-            <span class="bolded">Note:</span> <span class="emphasized">WebTools-NG must be installed in the Applications folder.</span><br>
-            <span class="bolded">Note:</span> <span class="emphasized">The token shown above is bogus and will not work, you must use your own Plex token.</span>
+            <p><span class="bolded">Note:</span> <span class="emphasized">WebTools-NG must be installed in the Applications folder.</span><br>
+            <span class="bolded">Note:</span> <span class="emphasized">The token shown above is bogus and will not work, you must use your own Plex token.</span></p>
             <p>Alternatively, You may do the following on the Mac:</p>            
-            <p><span class="bolded">1.</span> Locate WebTools-NG in the Applications folder using Finder<br>
-               <span class="bolded">2.</span> Right-click on WebTools-NG and select &quot;Show Package Contents&quot;<br>
-               <span class="bolded">3.</span> Locate the executable file. (Contents/MacOS/<strong>WebTools-NG</strong>)<br>
-               <span class="bolded">4.</span> Drag that file onto your blank Terminal command line and add <code style="color:Tomato; font-size: 16px;">X-Plex-Token=(your Plex token)</code><br>
-               <span class="bolded">5.</span> Leave your Terminal window open while you use the application</p>
+            <p>- Locate WebTools-NG in the Applications folder using Finder<br>
+               - Right-click on WebTools-NG and select &quot;Show Package Contents&quot;<br>
+               - Locate the executable file. (Contents/MacOS/<span class="bolded">WebTools-NG</span>)<br>
+               - Drag that file onto your blank Terminal command line and add <code style="color:Tomato; font-size: 16px;">X-Plex-Token=(your Plex token)</code><br>
+               - Leave your Terminal window open while you use the application</p>
             <p>To find your Plex Token, see this page: <a href="https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/">Finding a Plex authentication token</a></p>
-            <span class="bolded">Note:</span> <span class="emphasized">Using this method removes the need to enter a password &amp; code for 2FA logins.</span>
+            <p><span class="bolded">Note:</span> <span class="emphasized">Using this method removes the need to enter a password &amp; code for 2FA logins.</span></p>
          </div>
       </div>
       <!-- services section end -->
