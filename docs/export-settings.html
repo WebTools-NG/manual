@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>Info</title>
+    <title>Export Settings</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -124,72 +124,54 @@
     <!-- table section start -->
       <div class="services_section layout_padding">
         <div class="container">
-          <h1 class="services_taital">Info</h1>
+          <h1 class="services_taital">Export Settings</h1>
           <h2><a href="menu.html">Main Menu</a></h2>
-          <br>
-          <h2>License</h2>
-          <p>The license for this app is `Mozilla Public License 2.0`</p>
-          <p>You may read about this license, [here](https://github.com/WebTools-NG/WebTools-NG/blob/master/LICENSE)</p>
-          <hr>
-          <h2>Beta Testing</h2>
-          <p>Yes, we do have a Beta Testing program, and that&#39;s your chance to not only try out the bleeding edge of WebTools-NG, but also help us help the Plex community as a whole.
-            Besides that, you as a Beta tester also engage directly with the developers of WebTools-NG, so if something is on your mind regarding WebTools-NG, then this is indeed the place to be.</p>
-            <p>If you want to participate in the beta program for WebTools-NG, then it does involve a few things:</p>
-            <h3 id="requirements">Requirements</h3>
+          <p>Here, you configure various settings regarding the export of your data.</p>
+<p>If you have not configured the <code style="color:Tomato; font-size: 16px;">Select Export Directory</code> setting, you will be presented with a friendly reminder:</p>
+<p><img src="images/general/no-download-folder-01.png" alt=""></p>
+<p>The message will no longer display once you have configured the <code style="color:Tomato; font-size: 16px;">Select Export Directory</code> setting.</p>
+<hr>
+<p><img src="images/general/02-exporttools-settings-01.png" alt=""></p>
 
-            <p>You must accept, that this is beta software!<br>
-            You must sign up for our Slack <a href="https://join.slack.com/t/webtools-ng/shared_invite/zt-h4opzgkh-Ge_AA86xuxqoORnDxD3AwA">here</a><br>
-            You must <a href="https://github.com/join?source=header-repo">create a GitHub account</a>, if you do not already have one</li>
-            You must sign up for our translation site <a href="https://poeditor.com/join/project?hash=yFjdfkDfup">here</a><br>
-            Note that this is regardless of whether or not you do any translations. We use this information for our Credits page</p>
+<p><span class="bolded">Select Export Directory</span><br>
+This option will allow you to select a folder for any output files to be stored in. A WebTools-NG folder will be created in your desired location and inside of the WebTools-NG folder, a module folder will be created, EG: ExportTools.</p>
 
-            <p>You must download the current WebTools beta. (Link is available in Slack)</p>
+<p><span class="bolded">Select Date/Time Format</span><br>
+This option allows you to set the Date/Time format according to your preferred Region/Language settings.</p>
 
-            <h3 id="requirements">Language</h3>
+<p><span class="bolded">Date Style</span><br>
+This option allows you to select Full, Long, Medium or Short Date styles.</p>
 
-            <p>You should test WebTools in your native language<br>
-            If a translation is not correct, you should correct it at the <a href="https://poeditor.com/join/project?hash=yFjdfkDfup">translation site</a><br>
-            If your language is missing, you should create and translate it at the <a href="https://poeditor.com/join/project?hash=yFjdfkDfup">translation site</a><br>
-            Languages that have been translated, or are in the process of being translated:</p>
-            <p>Arabic<br>
-            Chinese<br>
-            Danish<br>
-            Dutch<br>
-            English<br>
-            French<br>
-            German<br>
-            Hungarian<br>
-            Italian<br>
-            Polish<br>
-            Portuguese (BR)<br>
-            Russian<br>
-            Spanish<br>
-            Swedish</p>
+<p><span class="bolded">Time Style</span><br>
+This option allows you to select Full, Long, Medium or Short Time styles.</p>
 
-            <h3>Testing</h3>
+<p><span class="bolded">Delimiter for multiple data in the same field</span><br>
+This option allows you to set the separator used when a single field contains multiple pieces of information.</p>
 
-            <p>You should test as many functions of WebTools-NG as possible</p>
+<p><span class="bolded">Qualifier to use with a text based field for CSV (Use space for none)</span><br>
+You may use any characters to qualify the text. A quote or double quote is recommended.</li>
 
-            <h3>Bug Reporting</h3>
+<p><span class="bolded">What to use if a field cannot be found</span><br>
+This option allows you to set the character/s you wish to use when a field is blank, or cannot be found.</p>
 
-            <p>If you are facing a bug, and it&#39;s not listed <a href="https://github.com/WebTools-NG/WebTools-NG/issues?q=is%3Aopen+is%3Aissue">here</a>, then you must create a new [BUG] Issue report</p>
+<p><span class="bolded">Delimiter between columns in CSV file (Use 9 for TAB)</span><br>
+This option allows you to set the column separator so that Excel/Open Office etc. is able to distinguish the columns within the .csv file. It is recommended that you use the pipe character <code>|</code> as the separator.</p>
 
-            <h3>Feature Requests</h3>
+<p><span class="bolded">Replace Return character with</span><br>
+This option allows you to set the word or characters used to replace the hidden Return (Line Feed/Line End) characters within the .csv file. <code style="color:Tomato; font-size: 16px;">&lt;Return&gt;</code> is the recommended default.</p>
 
-            <p>If you have a feature you would like to see included in WebTools-NG, or you have any suggestions for enhancements to existing features and they are not listed <a href="https://github.com/WebTools-NG/WebTools-NG/issues?q=is%3Aopen+is%3Aissue">here</a>, then please create a new [RFE] Issue report</p>
+<p><span class="bolded">Replace NewLine character with</span><br>
+This option allows you to set the word or characters used to replace the hidden NewLine (Line Feed/Line End) characters within the .csv file. <code style="color:Tomato; font-size: 16px;">&lt;Newline&gt;</code> is the recommended default.</p>
 
-            <h3>Questions</h3>
+<p><span class="bolded">Return</span><br>
+Click on the <code style="color:Tomato; font-size: 16px;">Return</code> button to return you to the Global Settings page.</p>
 
-            <p>Start by checking the <a href="https://github.com/WebTools-NG/WebTools-NG/wiki">Wiki</a> first please<br>
-            If you still have a question during beta testing, it should be asked in our Slack beta-v3 channel</p>
+<hr>
+<p>See the <a href="help.html">Help</a> page for details on creating a custom level and exporting Art &amp; Posters from a Movies library.<br>
+See the <a href="help.html">Help</a> page to set the default column separator for Microsoft Excel in Windows 10.<br>
+See the <a href="help.html">Help</a> page for details on importing a .csv file into Microsoft Excel.</p>
 
-            <h3 id="credits">Credits</h3>
-            <p>If you sign up for the beta, you will be mentioned in the <code>About Us</code> page of WebTools-NG, with the name you use for our translation site, unless you opt out of that.<br>
-            We hope everyone enjoys WebTools-NG and we would like to thank all of those people who have contributed to making WebTools-NG a great tool.</p>
-            
-            <h3 id="catch">Catch!</h3>
-            <p>If you simply sign up, but neither participate in the beta-testing, nor translate, then you will be removed from the credit list after ~ 3 weeks, this is to ensure, that only people that participate get any credit!<br>
-            Thank You! 👍</p>
+
           <!-- table section end -->
         </div>
       </div>

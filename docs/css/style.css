@@ -1042,7 +1042,7 @@ button {
     color: #e27141;
 }
 table, th, td {
-   border: 1px solid black;
-   padding-left: 5px;
-   padding-right: 5px;
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
 }

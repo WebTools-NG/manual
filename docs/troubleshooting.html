@@ -126,8 +126,168 @@
         <div class="container">
           <h1 class="services_taital">Troubleshooting</h1>
           <h2><a href="menu.html">Main Menu</a></h2>
-          
-          <!-- table section end -->
+
+          <h3>WebTools-NG Forum</h3>
+          <p>If you have any questions or comments regarding WebTools-NG, we have a forum thread on the <a href="https://forums.plex.tv/t/598539">Plex forums</a> site, where you can post your questions, comments or concerns.</p>
+                    
+          <p>If you are creating a <a href="https://github.com/WebTools-NG/WebTools-NG/issues">Github Issue</a> report or you want to troubleshoot some problem with WebTools-NG, logs are the way to go and they are mandatory, where appropriate, if you are creating a <a href="https://github.com/WebTools-NG/WebTools-NG/issues">Github Issue</a> report.</p>
+
+          <p>To get decent logs, you need to reconfigure WebTools-NG, so after launch, go to Global Settings &gt; [[General Settings|General Settings]] and do the following:</p>
+
+<p>- Set <span class="bolded">Log level to use (Change only if asked by the devs)</span> to <span class="bolded">verbose</span> as a minimum, you may be asked to set this to <span class="bolded">debug</span> or <span class="bolded">silly</span> when investigating an issue<br>
+- Set <span class="bolded">Size of logfile, before rollover</span> to at least <span class="bolded">4Mb</span><br>
+- Restart WebTools-NG<br>
+- Reproduce the issue<br>
+- Right after reproducing your issue, go to the top menu and select <span class="bolded">File &gt; Open Log Directory</span> select all of the log files and add them to a zip archive file <br>
+- upload the zip archive to your <a href="https://github.com/WebTools-NG/WebTools-NG/issues">Github Issue</a> report, Forum Thread or wherever you raised the issue.</p>
+
+<p><span class="bolded">Note:</span> <em>Remember to switch the <span class="bolded">Log level to use (Change only if asked by the devs)</span> level back to <span class="bolded">info</span>, since higher levels may have an impact on performance.</em></p>
+<hr>
+<h3>Changelog</h3>
+<p>Click here to view the <a href="https://github.com/WebTools-NG/WebTools-NG/blob/master/CHANGELOG.md">Changelog.</a></p>  
+<hr>
+<h3>Download</h3>
+<p>Before you proceed, make sure you have selected a server to work with. Most operations will fail if you have not selected a server.</p>
+<p><img src="images/general/server-select-01.png" alt=""></p>
+<p>After entering the Download module page, you may be faced with a progress bar that stops advancing with an endless spinning arrow. When faced with this situation, sometimes it is advantageous to click on another module link in the menu and then return to the Download module.</p>
+<p>You may also try adjusting the <code style="color:Tomato; font-size: 16px;">Timeout when downloading</code> setting on the <a href="download-module-settings.html">Download Settings</a> page.</p>
+<p>Last but least, close WebTools-NG and then reopen the program. Fingers crossed, the transfer will proceed as expected.</p>
+<p>If any of the methods above fail, then you should check your network connection. Always try rebooting the modem/router and all devices connected to it, including any wireless connections, first.</p>
+<p>You should also exercise some patience, as this may only be a temporary situation.</p>
+<hr>
+<h3>Microsoft Excel</h3>
+<p>If importing a .csv file into Microsoft Excel and you find blank/missing fields or the text formatting is messed up, open the .csv file using a plain text editor and confirm the data is actually missing before submitting a Github Issue report, thanks. We highly recommend you use Libre Office instead, it is free.</p>
+<p><span class="bolded">Note:</span> <em>The .csv file does NOT contain any text formatting. The Text formatting is applied by Microsoft Excel, in this case.</em></p>
+<p>See the <a href="help.html">Help</a> page for details on importing a .csv file into Microsoft Excel.<br>
+See the <a href="help.html">Help</a> page for details on setting the Default Column Separator for Microsoft Excel in Windows 10.</p>
+<hr>
+<h2>Known Issues</h2>
+<p>Here we list all known issues with WebTools-NG.</p>
+<h3>General</h3>
+
+<p><span class="bolded">Internet Connection</span><br>
+An active Internet Connection is required in order for WebTools-NG to communicate with your Plex Media Server/s via <a href="https://plex.tv">https://plex.tv</a>. Your Plex Media Server does NOT need to be configured for Remote Access at all, but an active Internet connection is required and your Plex Media Server needs to be online and properly authenticated with plex.tv.</p>
+
+<p><span class="bolded">Switch Language</span><br>
+When switching language, the top menu is not updated to the new language until after a restart of the WebTools-NG application <a href="https://github.com/WebTools-NG/WebTools-NG/issues/32">#32</a></p>
+
+<p><span class="bolded">Column Separator</span><br>
+ExportTools Settings. If any character is used as a column separator and that character is contained within the Plex description for a Movie or TV Show, it may cause the ExportTools output file to become scrambled. We recommend that you only use the <span class="bolded">|</span> Pipe character as the separator. <a href="https://github.com/WebTools-NG/WebTools-NG/issues/183">#183</a></p>
+
+<p><span class="bolded">Automatic Login</span><br>
+When logging in automatically by using your Plex Token, especially when using a script/batch file, the login may fail due to a change in your Plex token. Plex will change the Plex Token under some circumstances and that may render your old token unusable. Please check that your Plex Token is up to date before creating an Issue report, thanks.</p>
+
+<h3>ExportTools</h3>
+
+<p><span class="bolded">Exporting to .xlsx</span><br>
+When exporting to XLSX, and the library is very large, there&#39;s a possibility that it may never finish. This is due to the way we currently handle XLSX, where everything is held in memory. See: <a href="https://github.com/WebTools-NG/WebTools-NG/issues/331">GitHub Issue 331</a></p>
+
+<p><span class="bolded">Note:</span> <em>exporting to a CSV file is fine, so if exporting very large libraries, use only CSV for now</em><br>
+<span class="bolded">Note:</span> <em>Exporting as XLSX is currently disabled</em></p>
+
+<p><span class="bolded">Outputting the Sort Title</span><br>
+If you choose to output the <code style="color:Tomato; font-size: 16px;">Sort Title</code> field, then be aware it may not be populated because Plex tend to generate this field on the fly in Plex/Web and it may not be captured by ExportTools.</p>
+
+<p><span class="bolded">Outputting your Library definitions</span><br>
+If you select <code style="color:Tomato; font-size: 16px;">Library</code> in the <code style="color:Tomato; font-size: 16px;">Select Export Type</code> menu, then you may only select <code style="color:Tomato; font-size: 16px;">Libraries</code> in the <code style="color:Tomato; font-size: 16px;">Select Sub Type</code> menu.<br>
+There will be no selections available in the <code style="color:Tomato; font-size: 16px;">Select Media Library</code> or <code style="color:Tomato; font-size: 16px;">Export Level</code> menus. The Library selection will output the definitions of your Libraries and NOT their contents.</p>
+
+<p><span class="bolded">Outputting Posters and/or Art</span><br>
+If you choose to output Art and/or Posters, make sure you select at least the Title field to export as well. Also, in <a href="exporttools-module-settings.html">ExportTools Settings</a> make sure you enter the width and height separated by an asterix <code style="color:Tomato; font-size: 16px;">*</code> like so: <span class="bolded">400*600</span>.</p>
+
+<p>When exporting Art and/or Posters, do note that the art and/or posters may not be in the specified resolution. This may be due to the way Plex exports the images. The resolution may depend on the image resolution of the images that your Plex Media Server has stored and the image resolution you have specified in the settings.</p>
+
+<p>When adding Export Art, Export Posters, Export Show Art, Export Season Posters or Export Show Posters to a Custom Level, these items will <span class="bolded">always</span> be sorted to the bottom of the list. You may sort any of the fields above these items, but not below them. The field order will resort to these items being at the bottom of the list upon saving the Custom Level. Thanks go to <a href="https://github.com/kiwichick888">kiwichick888</a> for reminding us of this :)</p>
+
+<p><span class="bolded">v0.3.16 of WebTools-NG &amp; ExportTools &gt; Settings</span></p>
+
+<p>There was a bug with the ExportTools &gt; Settings page where upon entering the page you are unable to make changes to the settings. A workaround is to open Help &gt; About WebTools-NG, close the dialogue and then proceed to make changes to the settings. An alternative method is to click outside of the WebTools-NG window, to deselect the window and then click on the window again and continue as normal.</p>
+
+<p><span class="bolded">Note:</span> <em>The settings select bug has been identified and corrected in v0.3.17. You may find the latest version here: <a href="https://github.com/WebTools-NG/WebTools-NG/releases">Latest Releases</a></em></p>
+
+<p><span class="bolded">Finding Missing TV Show Episodes</span><br>
+If you select a TV Show library, then that library must be using the new <code style="color:Tomato; font-size: 16px;">Plex TV Series</code> agents.<br>
+If the library was converted to use the new <code style="color:Tomato; font-size: 16px;">Plex TV Series</code> agents, then you MUST Refresh Metadata for the entire library.<br>
+Please check the above and make sure your TV Show library complies with these restrictions before creating a Github issue, thanks.</p>
+
+<p>If you encounter something like this in your .csv/.xlsx file:</p>
+
+<p><code style="color:Tomato; font-size: 16px;">7455 | Wonders of Life | TVDB Airing | **** ERROR **** | N/A | 5 | 1 | N/A | N/A | N/A | Guid problem found, please refresh metadata, or sort order not avail at cloud provider</code><br><br>
+Then the issue may be that the show contains more than one database GUID.<br>
+You may try re-matching the series in Plex or you may Plex Dance the series. You may also <code style="color:Tomato; font-size: 16px;">Edit TV Show &gt; Advanced &gt; Episode Ordering</code> and set it to either the TMDB or TVDB, as required.</p>
+
+<p><span class="bolded">Note:</span> <em>You should always make sure your TV Show files and folders are named correctly.</em><br>
+<span class="bolded">Note:</span> <em>Not all issues can be corrected due to the many other possible issues with your TV series.</em></p>
+</ul>
+<h3>Linux OS</h3>
+
+<p><span class="bolded">No Icon for Linux</span><br>
+This is sadly an Electron issue, and out of our hands</p>
+
+<p><span class="bolded">Appimage files wont run</span><br>
+In Ubuntu 22.04 or greater, you must install libfuse2 using this command in Terminal: <code style="color:Tomato; font-size: 16px;">sudo apt install libfuse2</code>, before you are able to run .appimage files. See this page for more details: <a href="https://itsfoss.com/cant-run-appimage-ubuntu/">It&#39;s Foss</a></li>
+
+<h3>Mac OS</h3>
+
+<p><span class="bolded">Mac warning when running WebTools-NG</span><br>
+There&#39;s a warning, when opening the .dmg file on a Mac, stating it is untrusted<br>
+This is due to the fact, that the WebTools-NG application is not signed. We sadly, do not the have money to pay an annual fee to Apple just to satisfy this requirement in MacOS.</p>
+<p>To work around it, please view this <a href="https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac">page</a><br>
+
+<h3>Docker</h2>
+
+<p><span class="bolded">Using a Docker Container for Plex Media Server</span><br>
+If you are using a Docker container for Plex Media Server and you access your Plex Media Server from a different IP Address to that of the Docker container, then you should enter the Plex Media Server URL into the <code style="color:Tomato; font-size: 16px;">Plex &gt; Settings &gt; Network &gt; Custom server access URLs</code> box like so:<br><br>
+<img src="images/general/custom-server-access.png" alt=""></p>
+
+<p>This will allow WebTools-NG to access your server from the specified URL instead of the Docker container URL which usually begins with 172.x.x.x</p>
+
+<p>Thanks go to <a href="https://github.com/Droppisalt">Droppisalt</a> for highlighting this issue.</p>
+
+<p>This is an ongoing list of questions we get asked frequently.</p>
+<hr>
+<h2>Frequently Asked Questions (FAQ)</h2>
+
+<h3>WebTools-NG</h3>
+
+<p><span class="bolded">What is WebTools-NG?</span><br>
+See <a href="about-webtools-ng.html">here</a></p>
+
+<p><span class="bolded">Why do I need to sign-in to plex.tv?</span><br>
+You need to sign-in so we can gather a list of the servers you own from <a href="https://plex.tv">https://plex.tv</a></p>
+
+<p><span class="bolded">Why can&#39;t I use Google or other authentication to sign-in?</span><br>
+Because we are stupid ;)<br>
+We made it work with plex.tv authentication, but <a href="https://github.com/WebTools-NG/WebTools-NG/issues/310">need help</a> with the rest</p>
+
+<p><span class="bolded">Where are my local settings stored?</span><br>
+In WebTools-NG, you&#39;ll find a top menu that allows you to open the log directory.<br>
+Go one directory up from there to find all of the relevant files</p>
+
+<p><span class="bolded">Do you log anything from me?</span><br>
+No, all logs are kept on your PC/Laptop, so it&#39;s your call to post logs if asked for them</p>
+
+<p><span class="bolded">Is this safe?</span><br>
+We hope/think so, since everything is done using Plex authentication</p>
+
+<p><span class="bolded">I can only select my own servers?</span><br>
+This is by design, since WebTools-NG is an admin tool for the Plex Media Server Owner, however, you may now select a server that has been shared with you from the Server selector drop down menu.</p>
+
+<hr>
+<h3>ExportTools</h3>
+
+<p><span class="bolded">Why is a CSV file generated, when I selected to export to xlsx?</span><br>
+The CSV file is used to generate the xlsx file, and as such, it is necessary</p>
+
+<p><span class="bolded">ExportTools module is missing a field</span><br>
+if so, then please create a <a href="https://github.com/WebTools-NG/WebTools-NG/issues/new?labels=enhancement&amp;template=feature_request.md">Github Issue</a>, and upload <a href="https://support.plex.tv/articles/201998867-investigate-media-information-and-formats/">Media Info XML file</a> to your issue report</p>
+
+<hr>
+<h3>Commandline execution (Automation)</h3>
+
+<p>Currently, this is not supported<br>
+See <a href="https://github.com/WebTools-NG/WebTools-NG/issues/370">Automation</a> for progress on this</p>
+<!-- table section end -->
         </div>
       </div>
     </div>
