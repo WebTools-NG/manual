@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>Info</title>
+    <title>General List</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -124,72 +124,78 @@
     <!-- table section start -->
       <div class="services_section layout_padding">
         <div class="container">
-          <h1 class="services_taital">Info</h1>
-          <h2><a href="menu.html">Main Menu</a></h2>
-          <br>
-          <h2>License</h2>
-          <p>The license for this app is `Mozilla Public License 2.0`<br>
-          You may read about this license, <a href=">https://github.com/WebTools-NG/WebTools-NG/blob/master/LICENSE">here</a></p>
-          <hr>
-          <h2>Beta Testing</h2>
-          <p>Yes, we do have a Beta Testing program, and that&#39;s your chance to not only try out the bleeding edge of WebTools-NG, but also help us help the Plex community as a whole.
-            Besides that, you as a Beta tester also engage directly with the developers of WebTools-NG, so if something is on your mind regarding WebTools-NG, then this is indeed the place to be.</p>
-            <p>If you want to participate in the beta program for WebTools-NG, then it does involve a few things:</p>
-            <h3 id="requirements">Requirements</h3>
-
-            <p>- You must accept, that this is beta software!<br>
-            - You must sign up for our Slack <a href="https://join.slack.com/t/webtools-ng/shared_invite/zt-h4opzgkh-Ge_AA86xuxqoORnDxD3AwA">here</a><br>
-            - You must <a href="https://github.com/join?source=header-repo">create a GitHub account</a>, if you do not already have one</li>
-            - You must sign up for our translation site <a href="https://poeditor.com/join/project?hash=yFjdfkDfup">here</a><br>
-            - Note that this is regardless of whether or not you do any translations. We use this information for our Credits page</p>
-
-            <p>You must download the current WebTools beta. (Link is available in Slack)</p>
-
-            <h3 id="requirements">Language</h3>
-
-            <p>You should test WebTools in your native language<br>
-            If a translation is not correct, you should correct it at the <a href="https://poeditor.com/join/project?hash=yFjdfkDfup">translation site</a><br>
-            If your language is missing, you should create and translate it at the <a href="https://poeditor.com/join/project?hash=yFjdfkDfup">translation site</a></p>
-            <p>Languages that have been translated, or are in the process of being translated:</p>
-            <p>Arabic<br>
-            Chinese<br>
-            Danish<br>
-            Dutch<br>
-            English<br>
-            French<br>
-            German<br>
-            Hungarian<br>
-            Italian<br>
-            Polish<br>
-            Portuguese (BR)<br>
-            Russian<br>
-            Spanish<br>
-            Swedish</p>
-
-            <h3>Testing</h3>
-
-            <p>You should test as many functions of WebTools-NG as possible</p>
-
-            <h3>Bug Reporting</h3>
-
-            <p>If you are facing a bug, and it&#39;s not listed <a href="https://github.com/WebTools-NG/WebTools-NG/issues?q=is%3Aopen+is%3Aissue">here</a>, then you must create a new [BUG] Issue report</p>
-
-            <h3>Feature Requests</h3>
-
-            <p>If you have a feature you would like to see included in WebTools-NG, or you have any suggestions for enhancements to existing features and they are not listed <a href="https://github.com/WebTools-NG/WebTools-NG/issues?q=is%3Aopen+is%3Aissue">here</a>, then please create a new [RFE] Issue report</p>
-
-            <h3>Questions</h3>
-
-            <p>Start by checking the <a href="https://github.com/WebTools-NG/WebTools-NG/wiki">Wiki</a> first please<br>
-            If you still have a question during beta testing, it should be asked in our Slack beta-v3 channel</p>
-
-            <h3 id="credits">Credits</h3>
-            <p>If you sign up for the beta, you will be mentioned in the <code>About Us</code> page of WebTools-NG, with the name you use for our translation site, unless you opt out of that.<br>
-            We hope everyone enjoys WebTools-NG and we would like to thank all of those people who have contributed to making WebTools-NG a great tool.</p>
-            
-            <h3 id="catch">Catch!</h3>
-            <p>If you simply sign up, but neither participate in the beta-testing, nor translate, then you will be removed from the credit list after ~ 3 weeks, this is to ensure, that only people that participate get any credit!<br>
-            Thank You! 👍</p>
+          <h1 class="services_taital">General List</h1>
+          <h2><a href="server-settings-list.html">Server Settings List</a></h2>
+          <h1 id="plex-media-server---server-settings-group---general">Plex Media Server - Server Settings Group - General</h1>
+<p>For more information regarding these settings, please visit the <a href="https://support.plex.tv/articles/201105343-advanced-hidden-server-settings/">Plex Advanced/Hidden server settings</a> page or ask on the <a href="https://forums.plex.tv/">Plex Forums</a> if you wish to know more about these hidden/advanced settings.</p>
+<hr>
+<h3 id="settings-group-general">Settings Group: general</h3>
+<table>
+<tr>
+<td><b>Name</b></td>
+<td><b>Label</b></td>
+<td><b>Summary</b></td>
+<td><b>Type</b></td>
+<td><b>Default</b></td>
+<td><b>Value</b></td>
+</tr>
+<tr>
+<td>FriendlyName</td>
+<td>Friendly name</td>
+<td>This name will be used to identify this media server to other computers on your network. If you leave it blank, your computer's name will be used instead.</td>
+<td>text</td>        
+<td></td>        
+<td></td>
+</tr>
+<tr>
+<td>sendCrashReports</td>
+<td>Send crash reports to Plex</td>
+<td>This helps us improve your experience.</td>
+<td>bool</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>PushNotificationsEnabled</td>
+<td>Push Notifications</td>
+<td>Allow this server to send push notifications to mobile devices. Note: Push notifications are delivered using Plex services. They're associated with your account, and some of them may contain information about the contents of your library.</td>
+<td>bool</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>logDebug</td>
+<td>Enable Plex Media Server debug logging</td>
+<td>Debug logging enables additional detail in the log files and is helpful in diagnosing problems.</td>
+<td>bool</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>LogVerbose</td>
+<td>Enable Plex Media Server verbose logging</td>
+<td>Verbose logging is only useful to debug specific issues and should only be enabled if requested by support staff.</td>
+<td>bool</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>MinimumProgressTime</td>
+<td></td>
+<td></td>
+<td>int</td>
+<td>60000</td>
+<td>60000</td>
+</tr>
+<tr>
+<td>ButlerUpdateChannel</td>
+<td>Server update Channel</td>
+<td></td>
+<td>text</td>
+<td>16</td>
+<td>8</td>
+</tr>
+</table>
           <!-- table section end -->
         </div>
       </div>

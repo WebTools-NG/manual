@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>Info</title>
+    <title>Network List</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -124,72 +124,165 @@
     <!-- table section start -->
       <div class="services_section layout_padding">
         <div class="container">
-          <h1 class="services_taital">Info</h1>
-          <h2><a href="menu.html">Main Menu</a></h2>
-          <br>
-          <h2>License</h2>
-          <p>The license for this app is `Mozilla Public License 2.0`<br>
-          You may read about this license, <a href=">https://github.com/WebTools-NG/WebTools-NG/blob/master/LICENSE">here</a></p>
-          <hr>
-          <h2>Beta Testing</h2>
-          <p>Yes, we do have a Beta Testing program, and that&#39;s your chance to not only try out the bleeding edge of WebTools-NG, but also help us help the Plex community as a whole.
-            Besides that, you as a Beta tester also engage directly with the developers of WebTools-NG, so if something is on your mind regarding WebTools-NG, then this is indeed the place to be.</p>
-            <p>If you want to participate in the beta program for WebTools-NG, then it does involve a few things:</p>
-            <h3 id="requirements">Requirements</h3>
-
-            <p>- You must accept, that this is beta software!<br>
-            - You must sign up for our Slack <a href="https://join.slack.com/t/webtools-ng/shared_invite/zt-h4opzgkh-Ge_AA86xuxqoORnDxD3AwA">here</a><br>
-            - You must <a href="https://github.com/join?source=header-repo">create a GitHub account</a>, if you do not already have one</li>
-            - You must sign up for our translation site <a href="https://poeditor.com/join/project?hash=yFjdfkDfup">here</a><br>
-            - Note that this is regardless of whether or not you do any translations. We use this information for our Credits page</p>
-
-            <p>You must download the current WebTools beta. (Link is available in Slack)</p>
-
-            <h3 id="requirements">Language</h3>
-
-            <p>You should test WebTools in your native language<br>
-            If a translation is not correct, you should correct it at the <a href="https://poeditor.com/join/project?hash=yFjdfkDfup">translation site</a><br>
-            If your language is missing, you should create and translate it at the <a href="https://poeditor.com/join/project?hash=yFjdfkDfup">translation site</a></p>
-            <p>Languages that have been translated, or are in the process of being translated:</p>
-            <p>Arabic<br>
-            Chinese<br>
-            Danish<br>
-            Dutch<br>
-            English<br>
-            French<br>
-            German<br>
-            Hungarian<br>
-            Italian<br>
-            Polish<br>
-            Portuguese (BR)<br>
-            Russian<br>
-            Spanish<br>
-            Swedish</p>
-
-            <h3>Testing</h3>
-
-            <p>You should test as many functions of WebTools-NG as possible</p>
-
-            <h3>Bug Reporting</h3>
-
-            <p>If you are facing a bug, and it&#39;s not listed <a href="https://github.com/WebTools-NG/WebTools-NG/issues?q=is%3Aopen+is%3Aissue">here</a>, then you must create a new [BUG] Issue report</p>
-
-            <h3>Feature Requests</h3>
-
-            <p>If you have a feature you would like to see included in WebTools-NG, or you have any suggestions for enhancements to existing features and they are not listed <a href="https://github.com/WebTools-NG/WebTools-NG/issues?q=is%3Aopen+is%3Aissue">here</a>, then please create a new [RFE] Issue report</p>
-
-            <h3>Questions</h3>
-
-            <p>Start by checking the <a href="https://github.com/WebTools-NG/WebTools-NG/wiki">Wiki</a> first please<br>
-            If you still have a question during beta testing, it should be asked in our Slack beta-v3 channel</p>
-
-            <h3 id="credits">Credits</h3>
-            <p>If you sign up for the beta, you will be mentioned in the <code>About Us</code> page of WebTools-NG, with the name you use for our translation site, unless you opt out of that.<br>
-            We hope everyone enjoys WebTools-NG and we would like to thank all of those people who have contributed to making WebTools-NG a great tool.</p>
-            
-            <h3 id="catch">Catch!</h3>
-            <p>If you simply sign up, but neither participate in the beta-testing, nor translate, then you will be removed from the credit list after ~ 3 weeks, this is to ensure, that only people that participate get any credit!<br>
-            Thank You! 👍</p>
+          <h1 class="services_taital">Network List</h1>
+          <h2><a href="server-settings-list.html">Server Settings List</a></h2>
+          <h1 id="plex-media-server---server-settings-group---network">Plex Media Server - Server Settings Group - Network</h1>
+<p>For more information regarding these settings, please visit the <a href="https://support.plex.tv/articles/201105343-advanced-hidden-server-settings/">Plex Advanced/Hidden server settings</a> page or ask on the <a href="https://forums.plex.tv/">Plex Forums</a> if you wish to know more about these hidden/advanced settings.</p>
+<hr>
+<h3 id="settings-group-network">Settings Group: network</h3>
+<table>
+<tr>
+<td><b>Name</b></td>
+<td><b>Label</b></td>
+<td><b>Summary</b></td>
+<td><b>Type</b></td>
+<td><b>Default</b></td>
+<td><b>Value</b></td>
+</tr>
+<tr>
+<td>ConfigurationUrl</td>
+<td>Web Manager URL</td>
+<td></td>
+<td>text</td>
+<td>http://127.0.0.1:32400/web</td>
+<td>http://127.0.0.1:32400/web</td>
+</tr>
+<tr>
+<td>EnableIPv6</td>
+<td>Enable server support for IPv6</td>
+<td></td>
+<td>bool</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>secureConnections</td>
+<td>Secure connections</td>
+<td>When set to "Required", some unencrypted connections (originating from the Media Server computer) will still be allowed and apps that don't support secure connections will not be able to connect at all.</td>
+<td>int</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>customCertificatePath</td>
+<td>Custom certificate location</td>
+<td>Path to a PKCS #12 file containing a certificate and private key to enable TLS support on a custom domain.</td>
+<td>text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>customCertificateKey</td>
+<td>Custom certificate encryption key</td>
+<td></td>
+<td>text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>customCertificateDomain</td>
+<td>Custom certificate domain</td>
+<td>Domain name to be published to plex.tv using your mapped port; must match a name from the custom certificate file.</td>
+<td>text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PreferredNetworkInterface</td>
+<td>Preferred network interface</td>
+<td>The network interface local clients will use to connect.</td>
+<td>text</td>
+<td></td>
+<td>bond0</td>
+</tr>
+<tr>
+<td>DisableTLSv1_0</td>
+<td>Strict TLS configuration</td>
+<td>Disables legacy weak ciphers, increases DH group size, and switches to ECDSA certificates when renewing. May prevent older clients from connecting.</td>
+<td>bool</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>allowedHttpOrigins</td>
+<td></td>
+<td></td>
+<td>text</td>    
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>GdmEnabled</td>
+<td>Enable local network discovery (GDM)</td>
+<td>This enables the media server to discover other servers and players on the local network.</td>
+<td>bool</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>WanPerUserStreamCount</td>
+<td>Remote streams allowed per user</td>
+<td>Maximum number of simultaneous streams each user is allowed when not on the local network.</td>
+<td>int</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>LanNetworksBandwidth</td>
+<td>LAN Networks</td>
+<td>Comma separated list of IP addresses or IP/netmask entries for networks that will be considered to be on the local network when enforcing bandwidth restrictions. If set, all other IP addresses will be considered to be on the external network and will be subject to external network bandwidth restrictions. If left blank, only the server's subnet is considered to be on the local network.</td>
+<td>text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MinutesAllowedPaused</td>
+<td>Terminate Sessions Paused for Longer Than</td>
+<td>Value is in minutes. Terminate any sessions which have been paused for a longer time than specified amount of time. Audio-only sessions and live sessions are excluded</td>
+<td>int</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TreatWanIpAsLocal</td>
+<td>Treat WAN IP As LAN Bandwidth</td>
+<td>Treat incoming requests from this network's WAN IP address as LAN requests in terms of bandwidth. This often occurs when DNS rebinding protection is in place and clients on the LAN cannot contact the server directly but instead have to go through the WAN IP address.</td>
+<td>bool</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>RelayEnabled</td>
+<td>Enable Relay</td>
+<td>The Relay allows connections to the server through a proxy relay when the server is not accessible otherwise. Note: this proxy relay is bandwidth limited</td>
+<td>bool</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>customConnections</td>
+<td>Custom server access URLs</td>
+<td>A comma-separated list of URLs (http or https) which are published up to plex.tv for server discovery.</td>
+<td>text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>allowedNetworks</td>
+<td>List of IP addresses and networks that are allowed without auth</td>
+<td>Comma separated list of IP addresses or IP/netmask entries for networks that are allowed to access Plex Media Server without logging in. When the server is signed out and this value is set, only localhost and addresses on this list will be allowed.</td>
+<td>text</td>
+<td>192.168.0.0/24</td>
+<td></td>
+</tr>
+<tr>
+<td>WebHooksEnabled</td>
+<td>Webhooks</td>
+<td>Allow this server to send events to external services.</td>    <td>bool</td>
+<td>true</td>
+<td>false</td>
+</tr>
+</table>
           <!-- table section end -->
         </div>
       </div>

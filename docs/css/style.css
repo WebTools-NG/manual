@@ -39,7 +39,7 @@ a:link {
     }
     
     a:visited {
-      color: pink;
+      color: rgb(0, 110, 255);
       background-color: transparent;
       text-decoration: none;
     }
@@ -51,7 +51,7 @@ a:link {
     }
     
     a:active {
-      color: yellow;
+      color: blue;
       background-color: transparent;
       text-decoration: underline;
     }
@@ -70,7 +70,7 @@ html {
 
 body {
     color: #666666;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.80857;
     font-weight: normal;
     overflow-x: hidden;
@@ -1042,5 +1042,7 @@ button {
     color: #e27141;
 }
 table, th, td {
-  border: 1px solid black;
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
 }

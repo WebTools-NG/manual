@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>Info</title>
+    <title>Transcoder List</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -124,72 +124,206 @@
     <!-- table section start -->
       <div class="services_section layout_padding">
         <div class="container">
-          <h1 class="services_taital">Info</h1>
-          <h2><a href="menu.html">Main Menu</a></h2>
-          <br>
-          <h2>License</h2>
-          <p>The license for this app is `Mozilla Public License 2.0`<br>
-          You may read about this license, <a href=">https://github.com/WebTools-NG/WebTools-NG/blob/master/LICENSE">here</a></p>
-          <hr>
-          <h2>Beta Testing</h2>
-          <p>Yes, we do have a Beta Testing program, and that&#39;s your chance to not only try out the bleeding edge of WebTools-NG, but also help us help the Plex community as a whole.
-            Besides that, you as a Beta tester also engage directly with the developers of WebTools-NG, so if something is on your mind regarding WebTools-NG, then this is indeed the place to be.</p>
-            <p>If you want to participate in the beta program for WebTools-NG, then it does involve a few things:</p>
-            <h3 id="requirements">Requirements</h3>
-
-            <p>- You must accept, that this is beta software!<br>
-            - You must sign up for our Slack <a href="https://join.slack.com/t/webtools-ng/shared_invite/zt-h4opzgkh-Ge_AA86xuxqoORnDxD3AwA">here</a><br>
-            - You must <a href="https://github.com/join?source=header-repo">create a GitHub account</a>, if you do not already have one</li>
-            - You must sign up for our translation site <a href="https://poeditor.com/join/project?hash=yFjdfkDfup">here</a><br>
-            - Note that this is regardless of whether or not you do any translations. We use this information for our Credits page</p>
-
-            <p>You must download the current WebTools beta. (Link is available in Slack)</p>
-
-            <h3 id="requirements">Language</h3>
-
-            <p>You should test WebTools in your native language<br>
-            If a translation is not correct, you should correct it at the <a href="https://poeditor.com/join/project?hash=yFjdfkDfup">translation site</a><br>
-            If your language is missing, you should create and translate it at the <a href="https://poeditor.com/join/project?hash=yFjdfkDfup">translation site</a></p>
-            <p>Languages that have been translated, or are in the process of being translated:</p>
-            <p>Arabic<br>
-            Chinese<br>
-            Danish<br>
-            Dutch<br>
-            English<br>
-            French<br>
-            German<br>
-            Hungarian<br>
-            Italian<br>
-            Polish<br>
-            Portuguese (BR)<br>
-            Russian<br>
-            Spanish<br>
-            Swedish</p>
-
-            <h3>Testing</h3>
-
-            <p>You should test as many functions of WebTools-NG as possible</p>
-
-            <h3>Bug Reporting</h3>
-
-            <p>If you are facing a bug, and it&#39;s not listed <a href="https://github.com/WebTools-NG/WebTools-NG/issues?q=is%3Aopen+is%3Aissue">here</a>, then you must create a new [BUG] Issue report</p>
-
-            <h3>Feature Requests</h3>
-
-            <p>If you have a feature you would like to see included in WebTools-NG, or you have any suggestions for enhancements to existing features and they are not listed <a href="https://github.com/WebTools-NG/WebTools-NG/issues?q=is%3Aopen+is%3Aissue">here</a>, then please create a new [RFE] Issue report</p>
-
-            <h3>Questions</h3>
-
-            <p>Start by checking the <a href="https://github.com/WebTools-NG/WebTools-NG/wiki">Wiki</a> first please<br>
-            If you still have a question during beta testing, it should be asked in our Slack beta-v3 channel</p>
-
-            <h3 id="credits">Credits</h3>
-            <p>If you sign up for the beta, you will be mentioned in the <code>About Us</code> page of WebTools-NG, with the name you use for our translation site, unless you opt out of that.<br>
-            We hope everyone enjoys WebTools-NG and we would like to thank all of those people who have contributed to making WebTools-NG a great tool.</p>
-            
-            <h3 id="catch">Catch!</h3>
-            <p>If you simply sign up, but neither participate in the beta-testing, nor translate, then you will be removed from the credit list after ~ 3 weeks, this is to ensure, that only people that participate get any credit!<br>
-            Thank You! 👍</p>
+          <h1 class="services_taital">Transcoder List</h1>
+          <h2><a href="server-settings-list.html">Server Settings List</a></h2>
+          <h1 id="plex-media-server---server-settings-group---transcoder">Plex Media Server - Server Settings Group - Transcoder</h1>
+<p>For more information regarding these settings, please visit the <a href="https://support.plex.tv/articles/201105343-advanced-hidden-server-settings/">Plex Advanced/Hidden server settings</a> page or ask on the <a href="https://forums.plex.tv/">Plex Forums</a> if you wish to know more about these hidden/advanced settings.</p>
+<hr>
+<h3 id="settings-group-transcoder">Settings Group: transcoder</h3>
+<table>
+<tr>
+<td><b>Name</b></td>
+<td><b>Label</b></td>
+<td><b>Summary</b></td>
+<td><b>Type</b></td>
+<td><b>Default</b></td>
+<td><b>Value</b></td>
+</tr>
+<tr>
+<td>TranscoderQuality</td>
+<td>Transcoder quality</td>
+<td>Quality profile used by the transcoder.</td>
+<td>int</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SegmentedTranscoderTimeout</td>
+<td>Segmented transcoder timeout</td>
+<td>Timeout in seconds segmented transcodes wait for the transcoder to begin writing data.</td>
+<td>int</td>
+<td>20</td>
+<td>20</td>
+</tr>
+<tr>
+<td>TranscoderTempDirectory</td>
+<td>Transcoder temporary directory</td>
+<td>Directory to use when transcoding for temporary files.</td>
+<td>text</td>        
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TranscoderDefaultDuration</td>
+<td>Transcoder default duration</td>
+<td>Duration in minutes to use when transcoding something with an unknown duration.</td>
+<td>int</td>
+<td>120</td>
+<td>120</td>
+</tr>
+<tr>
+<td>TranscoderThrottleBuffer</td>
+<td>Transcoder default throttle buffer</td>
+<td>Amount in seconds to buffer before throttling the transcoder.</td>
+<td>int</td>
+<td>60</td>
+<td>60</td>
+</tr>
+<tr>
+<td>TranscoderPruneBuffer</td>
+<td>Transcoder default prune buffer</td>
+<td>Amount in past seconds to retain before pruning segments from a transcode.</td>
+<td>int</td>
+<td>300</td>
+<td>300</td>
+</tr>
+<tr>
+<td>TranscoderLivePruneBuffer</td>
+<td></td>
+<td></td>
+<td>int</td>
+<td>5400</td>
+<td>5400</td>
+</tr>
+<tr>
+<td>TranscoderH264Preset</td>
+<td></td>
+<td></td>
+<td>text</td>
+<td>veryfast</td>
+<td>veryfast</td>
+</tr>
+<tr>
+<td>TranscoderH264BackgroundPreset</td>
+<td>Background transcoding x264 preset</td>
+<td>The x264 preset value used for background transcoding (Sync and Media Optimizer). Slower values will result in better video quality and smaller file sizes, but will take significantly longer to complete processing.</td>
+<td>text</td>
+<td>veryfast</td>
+<td>veryfast</td>
+</tr>
+<tr>
+<td>TranscoderH264Options</td>
+<td></td>
+<td></td>
+<td>text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TranscoderH264OptionsOverride</td>
+<td></td>
+<td></td>
+<td>text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TranscoderH264MinimumCRF</td>
+<td></td>
+<td></td>
+<td>double</td>
+<td>16</td>
+<td>16</td>
+</tr>
+<tr>
+<td>TranscoderLogLevel</td>
+<td></td>
+<td></td>
+<td>text</td>
+<td>error</td>
+<td>error</td>
+</tr>
+<tr>
+<td>TranscoderToneMapping</td>
+<td>Enable HDR tone mapping</td>
+<td>Transcoded HDR content will appear highly dimmed and desaturated with this disabled. Additional driver components may be needed to support hardware transcoding with this feature enabled; see our support articles for further details.</td>
+<td>bool</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>TranscoderCanOnlyRemuxVideo</td>
+<td>Disable video stream transcoding</td>
+<td>Disable transcoding of the video stream in transcoder operations. With this set, the transcoder may still transcode audio as well as remux video.</td>
+<td>bool</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>HardwareAcceleratedCodecs</td>
+<td>Use hardware acceleration when available</td>
+<td>Plex Media Server will attempt to use hardware-accelerated video codecs when encoding and decoding video. Hardware acceleration can make transcoding faster and allow more simultaneous video transcodes, but it can also reduce video quality and compatibility.</td>
+<td>bool</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>HardwareAcceleratedEncoders</td>
+<td>Use hardware-accelerated video encoding</td>
+<td>If hardware acceleration is enabled, this controls whether it's used for encoding, in addition to decoding.</td>
+<td>bool</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>SystemAudioCodecs</td>
+<td></td>
+<td></td>
+<td>bool</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>HardwareDevicePath</td>
+<td></td>
+<td></td>
+<td>text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>VaapiDriver</td>
+<td></td>
+<td></td>
+<td>text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>VaapiKernelDriver</td>
+<td></td>
+<td></td>
+<td>text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>omxdecExtraOutBufs</td>
+<td></td>
+<td></td>
+<td>int</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TranscodeCountLimit</td>
+<td>Maximum simultaneous video transcode</td>
+<td>Limit the number of simultaneous video transcode streams your server can utilize</td>
+<td>int</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</table>
           <!-- table section end -->
         </div>
       </div>
