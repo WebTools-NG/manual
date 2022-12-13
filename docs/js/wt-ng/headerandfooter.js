@@ -1,6 +1,6 @@
 class MyHeader extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <div class="header_section">
             <div class="header_main">
                <div class="mobile_menu">
@@ -79,20 +79,20 @@ class MyHeader extends HTMLElement {
             <!-- banner section end -->
          </div>
          <!-- header section end -->
-            `
-    }
+            `;
+  }
 }
 
-customElements.define('wtng-header', MyHeader)
+customElements.define("wtng-header", MyHeader);
 
 class MyFooter extends HTMLElement {
-   connectedCallback() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
          <footer>
            <p class="copyright_text" style="color:black;">2022 All Rights Reserved. WebTools-NG</a></p>
          </footer>
-      `
-   }
+      `;
+  }
 }
 
-customElements.define('wtng-footer', MyFooter)
+customElements.define("wtng-footer", MyFooter);
