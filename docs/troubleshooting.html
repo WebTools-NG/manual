@@ -150,7 +150,7 @@
 <p>Make sure you have selected a server to work with. Most operations will fail if you have not selected a server.</p>
 <p><img src="images/general/server-select-01.png" alt=""></p>
 <p>After entering the Download module page, you may be faced with a progress bar that stops advancing with an endless spinning arrow. When faced with this situation, sometimes it is advantageous to click on another module link in the menu and then return to the Download module.</p>
-<p>You may also try adjusting the <code style="color:Tomato; font-size: 16px;">Timeout when downloading</code> setting on the <a href="download-module-settings.html">Download Settings</a> page.</p>
+<p>You may also try adjusting the <code style="color:darksalmon; font-size: 16px;">Timeout when downloading</code> setting on the <a href="download-module-settings.html">Download Settings</a> page.</p>
 <p>Last but least, close WebTools-NG and then reopen the program. Fingers crossed, the transfer will proceed as expected.</p>
 <p>If any of the methods above fail, then you should check your network connection. Always try rebooting the modem/router and all devices connected to it, including any wireless connections, first.</p>
 <p>You should also exercise some patience, as this may only be a temporary situation.</p>
@@ -186,14 +186,14 @@ When exporting to XLSX, and the library is very large, there&#39;s a possibility
 <span class="bolded">Note:</span> <em>Exporting as XLSX is currently disabled</em></p>
 
 <p><span class="bolded">Outputting the Sort Title</span><br>
-If you choose to output the <code style="color:Tomato; font-size: 16px;">Sort Title</code> field, then be aware it may not be populated because Plex tend to generate this field on the fly in Plex/Web and it may not be captured by ExportTools.</p>
+If you choose to output the <code style="color:darksalmon; font-size: 16px;">Sort Title</code> field, then be aware it may not be populated because Plex tend to generate this field on the fly in Plex/Web and it may not be captured by ExportTools.</p>
 
 <p><span class="bolded">Outputting your Library definitions</span><br>
-If you select <code style="color:Tomato; font-size: 16px;">Library</code> in the <code style="color:Tomato; font-size: 16px;">Select Export Type</code> menu, then you may only select <code style="color:Tomato; font-size: 16px;">Libraries</code> in the <code style="color:Tomato; font-size: 16px;">Select Sub Type</code> menu.<br>
-There will be no selections available in the <code style="color:Tomato; font-size: 16px;">Select Media Library</code> or <code style="color:Tomato; font-size: 16px;">Export Level</code> menus. The Library selection will output the definitions of your Libraries and NOT their contents.</p>
+If you select <code style="color:darksalmon; font-size: 16px;">Library</code> in the <code style="color:darksalmon; font-size: 16px;">Select Export Type</code> menu, then you may only select <code style="color:darksalmon; font-size: 16px;">Libraries</code> in the <code style="color:darksalmon; font-size: 16px;">Select Sub Type</code> menu.<br>
+There will be no selections available in the <code style="color:darksalmon; font-size: 16px;">Select Media Library</code> or <code style="color:darksalmon; font-size: 16px;">Export Level</code> menus. The Library selection will output the definitions of your Libraries and NOT their contents.</p>
 
 <p><span class="bolded">Outputting Posters and/or Art</span><br>
-If you choose to output Art and/or Posters, make sure you select at least the Title field to export as well. Also, in <a href="exporttools-module-settings.html">ExportTools Settings</a> make sure you enter the width and height separated by an asterix <code style="color:Tomato; font-size: 16px;">*</code> like so: <span class="bolded">400*600</span>.</p>
+If you choose to output Art and/or Posters, make sure you select at least the Title field to export as well. Also, in <a href="exporttools-module-settings.html">ExportTools Settings</a> make sure you enter the width and height separated by an asterix <code style="color:darksalmon; font-size: 16px;">*</code> like so: <span class="bolded">400*600</span>.</p>
 
 <p>When exporting Art and/or Posters, do note that the art and/or posters may not be in the specified resolution. This may be due to the way Plex exports the images. The resolution may depend on the image resolution of the images that your Plex Media Server has stored and the image resolution you have specified in the settings.</p>
 
@@ -206,15 +206,15 @@ If you choose to output Art and/or Posters, make sure you select at least the Ti
 <p><span class="bolded">Note:</span> <em>The settings select bug has been identified and corrected in v0.3.17. You may find the latest version here: <a href="https://github.com/WebTools-NG/WebTools-NG/releases">Latest Releases</a></em></p>
 
 <p><span class="bolded">Finding Missing TV Show Episodes</span><br>
-If you select a TV Show library, then that library must be using the new <code style="color:Tomato; font-size: 16px;">Plex TV Series</code> agents.<br>
-If the library was converted to use the new <code style="color:Tomato; font-size: 16px;">Plex TV Series</code> agents, then you MUST Refresh Metadata for the entire library.<br>
+If you select a TV Show library, then that library must be using the new <code style="color:darksalmon; font-size: 16px;">Plex TV Series</code> agents.<br>
+If the library was converted to use the new <code style="color:darksalmon; font-size: 16px;">Plex TV Series</code> agents, then you MUST Refresh Metadata for the entire library.<br>
 Please check the above and make sure your TV Show library complies with these restrictions before creating a Github issue, thanks.</p>
 
 <p>If you encounter something like this in your .csv/.xlsx file:</p>
 
-<p><code style="color:Tomato; font-size: 16px;">7455 | Wonders of Life | TVDB Airing | **** ERROR **** | N/A | 5 | 1 | N/A | N/A | N/A | Guid problem found, please refresh metadata, or sort order not avail at cloud provider</code><br><br>
+<p><code style="color:darksalmon; font-size: 16px;">7455 | Wonders of Life | TVDB Airing | **** ERROR **** | N/A | 5 | 1 | N/A | N/A | N/A | Guid problem found, please refresh metadata, or sort order not avail at cloud provider</code><br><br>
 Then the issue may be that the show contains more than one database GUID.<br>
-You may try re-matching the series in Plex or you may Plex Dance the series. You may also <code style="color:Tomato; font-size: 16px;">Edit TV Show &gt; Advanced &gt; Episode Ordering</code> and set it to either the TMDB or TVDB, as required.</p>
+You may try re-matching the series in Plex or you may Plex Dance the series. You may also <code style="color:darksalmon; font-size: 16px;">Edit TV Show &gt; Advanced &gt; Episode Ordering</code> and set it to either the TMDB or TVDB, as required.</p>
 
 <p><span class="bolded">Note:</span> <em>You should always make sure your TV Show files and folders are named correctly.</em><br>
 <span class="bolded">Note:</span> <em>Not all issues can be corrected due to the many other possible issues with your TV series.</em></p>
@@ -225,7 +225,7 @@ You may try re-matching the series in Plex or you may Plex Dance the series. You
 This is sadly an Electron issue, and out of our hands</p>
 
 <p><span class="bolded">Appimage files wont run</span><br>
-In Ubuntu 22.04 or greater, you must install libfuse2 using this command in Terminal: <code style="color:Tomato; font-size: 16px;">sudo apt install libfuse2</code>, before you are able to run .appimage files. See this page for more details: <a href="https://itsfoss.com/cant-run-appimage-ubuntu/">It&#39;s Foss</a></li>
+In Ubuntu 22.04 or greater, you must install libfuse2 using this command in Terminal: <code style="color:darksalmon; font-size: 16px;">sudo apt install libfuse2</code>, before you are able to run .appimage files. See this page for more details: <a href="https://itsfoss.com/cant-run-appimage-ubuntu/">It&#39;s Foss</a></li>
 
 <h3>Mac OS</h3>
 
@@ -237,7 +237,7 @@ This is due to the fact, that the WebTools-NG application is not signed. We sadl
 <h3>Docker</h2>
 
 <p><span class="bolded">Using a Docker Container for Plex Media Server</span><br>
-If you are using a Docker container for Plex Media Server and you access your Plex Media Server from a different IP Address to that of the Docker container, then you should enter the Plex Media Server URL into the <code style="color:Tomato; font-size: 16px;">Plex &gt; Settings &gt; Network &gt; Custom server access URLs</code> box like so:<br><br>
+If you are using a Docker container for Plex Media Server and you access your Plex Media Server from a different IP Address to that of the Docker container, then you should enter the Plex Media Server URL into the <code style="color:darksalmon; font-size: 16px;">Plex &gt; Settings &gt; Network &gt; Custom server access URLs</code> box like so:<br><br>
 <img src="images/general/custom-server-access.png" alt=""></p>
 
 <p>This will allow WebTools-NG to access your server from the specified URL instead of the Docker container URL which usually begins with 172.x.x.x</p>
