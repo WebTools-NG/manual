@@ -495,7 +495,7 @@ button {
     background-color: #000d10;
 }
 
-/* Button Secondary */
+/* button secondary start */
 .btn_sec {
     width: 170px;
     margin: 0 auto;
@@ -525,8 +525,9 @@ button {
     color: #ffffff;
     background-color: #2b2278;
 }
-/* services section end */
+/* button secondary end */
 
+/* services section end */
 
 /* about section start */
 
