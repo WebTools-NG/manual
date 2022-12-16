@@ -495,7 +495,36 @@ button {
     background-color: #000d10;
 }
 
+/* Button Secondary */
+.btn_sec {
+    width: 170px;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.btn_sec a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #000d10;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.btn_sec a:hover {
+    color: #ffffff;
+    background-color: #2b2278;
+}
+
+.btn_sec.active a {
+    color: #ffffff;
+    background-color: #2b2278;
+}
 /* services section end */
 
 
