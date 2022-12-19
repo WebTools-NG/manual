@@ -1,7 +1,9 @@
-The WebTools-NG Website will inform and educate.
+The WebTools-NG website will allow you to explore and learn about WebTools-NG.
 
-Explore the site at your will.
+WebTools-NG contains several handy tool modules that allow you to maintain your Plex Media Server.
 
-Go there now!
+You may install WebTools-NG on any PC/Laptop running Windows, Mac or Linux.
 
-[https://github.com/WebTools-NG/manual](https://webtools-ng.github.io/manual/)
+Note: the .appimage package is NOT designed to run on a NAS.
+
+Checkout the website now: [https://github.com/WebTools-NG/manual](https://webtools-ng.github.io/manual/)
