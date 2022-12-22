@@ -618,6 +618,7 @@ button {
     font-weight: bold;
     padding-top: 30px;
     text-align: center;
+    text-shadow: 2px 2px 0px #000000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 }
 
 .blog_text {
@@ -628,6 +629,7 @@ button {
     color: #ffffff;
     padding-top: 40px;
     text-align: center;
+    text-shadow: 1px 1px 0px #000000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 }
 
 .play_icon_main {
