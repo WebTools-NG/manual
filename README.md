@@ -6,4 +6,4 @@ You may install WebTools-NG on any PC/Laptop running Windows, Mac or Linux.
 
 Note: the .appimage package is NOT designed to run on a NAS.
 
-Checkout the website now: [https://github.com/WebTools-NG/manual](https://webtools-ng.github.io/manual/)
+Checkout the website now: [https://webtools-ng.github.io/manual/](https://webtools-ng.github.io/manual/)
