@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"><!-- mobile metas -->
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="initial-scale=1, maximum-scale=1" name="viewport"><!-- site metas -->
+  <title>Known Issues</title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <meta content="" name="author"><!-- bootstrap css -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"><!-- style css -->
+  <link href="css/style.css" rel="stylesheet" type="text/css"><!-- Responsive-->
+  <link href="css/responsive.css" rel="stylesheet"><!-- fevicon -->
+  <link href="images/fevicon.png" rel="icon" type="image/png">
+  <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+  <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+  <link href="images/site.webmanifest" rel="manifest"><!-- Scrollbar Custom CSS -->
+  <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet"><!-- Tweaks for older IEs-->
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"><!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&amp;display=swap" rel="stylesheet"><!-- owl stylesheets -->
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" rel="stylesheet">
+</head>
+<body>
+  <!-- header section start -->
+  <div class="header_section">
+    <div class="header_main">
+      <div class="mobile_menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="logo_mobile">
+            <a href="index.html"><img src="images/logo.png"></a>
+          </div>
+          <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-toggler-icon"></div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-webtools-ng.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Main Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="help.html">Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container-fluid">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <div class="menu_main">
+          <ul>
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about-webtools-ng.html">About</a>
+            </li>
+            <li>
+              <a href="menu.html">Main Menu</a>
+            </li>
+            <li>
+              <a href="help.html">Help</a>
+            </li>
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!-- header section end -->
+  <div class="services_section layout_padding">
+    <div class="container">
+      <h1 class="services_taital">Known Issues</h1>
+      <h2><a href="menu.html">Main Menu</a></h2>
+      <p>Here we list all known issues with WebTools-NG.</p>
+      <h3>General</h3>
+      <p><span class="bolded">Internet Connection</span><br>
+      An active Internet Connection is required in order for WebTools-NG to communicate with your Plex Media Server/s via <a href="https://plex.tv">https://plex.tv</a>. Your Plex Media Server does NOT need to be configured for Remote Access at all, but an active Internet connection is required and your Plex Media Server needs to be online and properly authenticated with plex.tv.</p>
+      <p><span class="bolded">Switch Language</span><br>
+      When switching language, the top menu is not updated to the new language until after a restart of WebTools-NG. See <a href="https://github.com/WebTools-NG/WebTools-NG/issues/32">GitHub Issue 32</a>.</p>
+      <p><span class="bolded">Column Separator</span><br>
+      ExportTools Settings. If any character is used as a column separator and that character is contained within the Plex description for a Movie or TV Show, it may cause the ExportTools output file to become scrambled. We recommend that you only use the <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">|</code> Pipe character as the separator. See <a href="https://github.com/WebTools-NG/WebTools-NG/issues/183">GitHub Issue 183</a>.</p>
+      <p><span class="bolded">Automatic Login</span><br>
+      When logging in automatically by using your Plex Token, especially when using a script/batch file, the login may fail due to a change in your Plex token. Plex will change the Plex Token under some circumstances and that may render your old token unusable. Please check that your Plex Token is up to date before creating an Issue report, thanks.</p>
+      <h3>ExportTools</h3>
+      <p><span class="bolded">Exporting to .xlsx</span><br>
+      When exporting to XLSX, and the library is very large, there's a possibility that it may never finish. This is due to the way we currently handle XLSX, where everything is held in memory. See: <a href="https://github.com/WebTools-NG/WebTools-NG/issues/331">GitHub Issue 331</a>.</p>
+      <p><span class="bolded">Note:</span> <em>exporting to a CSV file is fine, so if exporting very large libraries, use only CSV for now</em><br>
+      <span class="bolded">Note:</span> <em>Exporting as XLSX is currently disabled</em></p>
+      <p><span class="bolded">Outputting the Sort Title</span><br>
+      If you choose to output the <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">Sort Title</code> field, then be aware it may not be populated because Plex tend to generate this field on the fly in Plex/Web and it may not be captured by ExportTools.</p>
+      <p><span class="bolded">Outputting your Library definitions</span><br>
+      If you select <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">Library</code> in the <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">Select Export Type</code> menu, then you may only select <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">Libraries</code> in the <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">Select Sub Type</code> menu.<br>
+      There will be no selections available in the <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">Select Media Library</code> or <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">Export Level</code> menus. The Library selection will output the definitions of your Libraries and NOT their contents.</p>
+      <p><span class="bolded">Outputting Posters and/or Art</span><br>
+      If you choose to output Art and/or Posters, make sure you select at least the Title field to export as well. Also, in <a href="exporttools-module-settings.html">ExportTools Settings</a> make sure you enter the width and height separated by an asterix <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">*</code> like so: <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">400*600</code>.</p>
+      <p>When exporting Art and/or Posters, do note that the art and/or posters may not be in the specified resolution. This may be due to the way Plex exports the images. The resolution may depend on the image resolution of the images that your Plex Media Server has stored and the image resolution you have specified in the settings.</p>
+      <p>When adding Export Art, Export Posters, Export Show Art, Export Season Posters or Export Show Posters to a Custom Level, these items will <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">always</code> be sorted to the bottom of the list. You may sort any of the fields above these items, but not below them. The field order will resort to these items being at the bottom of the list upon saving the Custom Level. Thanks go to <a href="https://github.com/kiwichick888">kiwichick888</a> for reminding us of this :)</p>
+      <p><span class="bolded">v0.3.16 of WebTools-NG & ExportTools &gt; Settings</span></p>
+      <p>There was a bug with the ExportTools &gt; Settings page where upon entering the page you are unable to make changes to the settings. A workaround is to open Help &gt; About WebTools-NG, close the dialogue and then proceed to make changes to the settings. An alternative method is to click outside of the WebTools-NG window, to deselect the window and then click on the window again and continue as normal.</p>
+      <p><span class="bolded">Note:</span> <em>The settings select bug has been identified and corrected in v0.3.17. You may find the latest version here: <a href="https://github.com/WebTools-NG/WebTools-NG/releases">Latest Releases</a></em></p>
+      <p><span class="bolded">Finding Missing TV Show Episodes</span><br>
+      If you select a TV Show library, then that library must be using the new <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">Plex TV Series</code> agents.<br>
+      If the library was converted to use the new <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">Plex TV Series</code> agents, then you MUST Refresh Metadata for the entire library.<br>
+      Please check the above and make sure your TV Show library complies with these restrictions before creating a Github issue, thanks.</p>
+      <p>If you encounter something like this in your .csv/.xlsx file:</p>
+      <p><code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">7455 | Wonders of Life | TVDB Airing | **** ERROR **** | N/A | 5 | 1 | N/A | N/A | N/A | Guid problem found, please refresh metadata, or sort order not avail at cloud provider</code><br>
+      <br>
+      Then the issue may be that the show contains more than one database GUID.<br>
+      You may try re-matching the series in Plex or you may Plex Dance the series. You may also <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">Edit TV Show &gt; Advanced &gt; Episode Ordering</code> and set it to either the TMDB or TVDB, as required.</p>
+      <p><span class="bolded">Note:</span> <em>You should always make sure your TV Show files and folders are named correctly.</em><br>
+      <span class="bolded">Note:</span> <em>Not all issues can be corrected due to the many other possible issues with your TV series.</em></p>
+      <h3>Linux OS</h3>
+      <p><span class="bolded">No Icon for Linux</span><br>
+      This is sadly an Electron issue, and out of our hands</p>
+      <p><span class="bolded">Appimage files wont run</span><br>
+      In Ubuntu 22.04 or greater, you must install libfuse2 using this command in Terminal: <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">sudo apt install libfuse2</code>, before you are able to run .appimage files. See this page for more details: <a href="https://itsfoss.com/cant-run-appimage-ubuntu/">It's Foss</a></p>
+      <h3>Mac OS</h3>
+      <p><span class="bolded">Mac warning when running WebTools-NG</span><br>
+      There's a warning, when opening the .dmg file on a Mac, stating it is untrusted<br>
+      This is due to the fact, that the WebTools-NG application is not signed. We sadly, do not have the money to pay an annual fee to Apple just to satisfy this requirement in MacOS.</p>
+      <p>To work around it, please view this <a href="https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac">page</a><br></p>
+      <h3>Docker</h3>
+      <p><span class="bolded">Using a Docker Container for Plex Media Server</span><br>
+      If you are using a Docker container for Plex Media Server and you access your Plex Media Server from a different IP Address to that of the Docker container, then you should enter the Plex Media Server URL into the <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">Plex &gt; Settings &gt; Network &gt; Custom server access URLs</code> box like so:<br>
+      <br>
+      <img alt="" src="images/general/custom-server-access.png"></p>
+      <p>This will allow WebTools-NG to access your server from the specified URL instead of the Docker container URL which usually begins with 172.x.x.x</p>
+      <p>Thanks go to <a href="https://github.com/Droppisalt">Droppisalt</a> for highlighting this issue.</p>
+      <hr>
+      <p><a href="webtools-ng-forum.html">Back</a> | <a href="frequently-asked-questions.html">Next</a></p>
+    </div>
+  </div><!-- footer section start -->
+  <div class="footer_section layout_padding">
+    <div class="container"></div>
+  </div><!-- footer section end -->
+  <!-- copyright section start -->
+  <div class="copyright_section">
+    <div class="container">
+      <p class="copyright_text">
+      <script>
+      document.write(new Date().getFullYear())
+      </script> - All Rights Reserved - WebTools-NG</p>
+    </div>
+  </div><!-- copyright section end -->
+  <!-- Javascript files-->
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap.bundle.min.js"></script> 
+  <script src="js/jquery-3.0.0.min.js"></script> 
+  <script src="js/plugin.js"></script> <!-- sidebar -->   
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script> 
+  <script src="js/custom.js"></script> <!-- javascript -->   
+  <script src="js/owl.carousel.js"></script> 
+  <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+</html>
