@@ -59,6 +59,7 @@ a:link {
 
     .bolded { font-weight: bold; }
     .emphasized { font-style: italic; }
+    .center { text-align: center;}
 
 * {
     box-sizing: border-box !important;
