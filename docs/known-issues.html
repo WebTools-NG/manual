@@ -89,7 +89,7 @@
       <h1 class="services_taital">Known Issues</h1>
       <h2><a href="menu.html">Main Menu</a></h2>
       <p>Here we list all known issues with WebTools-NG.</p>
-      <h3>General</h3>
+      <h3><img src="images/icons/webtools-24-ng.png" width="32">&nbsp;&nbsp;General</h3>
       <p><span class="bolded">Internet Connection</span><br>
       An active Internet Connection is required in order for WebTools-NG to communicate with your Plex Media Server/s via <a href="https://plex.tv">https://plex.tv</a>. Your Plex Media Server does NOT need to be configured for Remote Access at all, but an active Internet connection is required and your Plex Media Server needs to be online and properly authenticated with plex.tv.</p>
       <p><span class="bolded">Switch Language</span><br>
@@ -98,7 +98,7 @@
       ExportTools Settings. If any character is used as a column separator and that character is contained within the Plex description for a Movie or TV Show, it may cause the ExportTools output file to become scrambled. We recommend that you only use the <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">|</code> Pipe character as the separator. See <a href="https://github.com/WebTools-NG/WebTools-NG/issues/183">GitHub Issue 183</a>.</p>
       <p><span class="bolded">Automatic Login</span><br>
       When logging in automatically by using your Plex Token, especially when using a script/batch file, the login may fail due to a change in your Plex token. Plex will change the Plex Token under some circumstances and that may render your old token unusable. Please check that your Plex Token is up to date before creating an Issue report, thanks.</p>
-      <h3>ExportTools</h3>
+      <h3><img src="images/icons/export-tools-01.png" width="32">&nbsp;&nbsp;ExportTools</h3>
       <p><span class="bolded">Exporting to .xlsx</span><br>
       When exporting to XLSX, and the library is very large, there's a possibility that it may never finish. This is due to the way we currently handle XLSX, where everything is held in memory. See: <a href="https://github.com/WebTools-NG/WebTools-NG/issues/331">GitHub Issue 331</a>.</p>
       <p><span class="bolded">Note:</span> <em>exporting to a CSV file is fine, so if exporting very large libraries, use only CSV for now</em><br>
@@ -126,17 +126,17 @@
       You may try re-matching the series in Plex or you may Plex Dance the series. You may also <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">Edit TV Show &gt; Advanced &gt; Episode Ordering</code> and set it to either the TMDB or TVDB, as required.</p>
       <p><span class="bolded">Note:</span> <em>You should always make sure your TV Show files and folders are named correctly.</em><br>
       <span class="bolded">Note:</span> <em>Not all issues can be corrected due to the many other possible issues with your TV series.</em></p>
-      <h3>Linux OS</h3>
+      <h3><img src="images/icons/tux.png" width="32">&nbsp;&nbsp;Linux OS</h3>
       <p><span class="bolded">No Icon for Linux</span><br>
       This is sadly an Electron issue, and out of our hands</p>
       <p><span class="bolded">Appimage files wont run</span><br>
       In Ubuntu 22.04 or greater, you must install libfuse2 using this command in Terminal: <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">sudo apt install libfuse2</code>, before you are able to run .appimage files. See this page for more details: <a href="https://itsfoss.com/cant-run-appimage-ubuntu/">It's Foss</a></p>
-      <h3>Mac OS</h3>
+      <h3><img src="images/icons/apple-logo.png" width="32">&nbsp;&nbsp;Mac OS</h3>
       <p><span class="bolded">Mac warning when running WebTools-NG</span><br>
       There's a warning, when opening the .dmg file on a Mac, stating it is untrusted<br>
       This is due to the fact, that the WebTools-NG application is not signed. We sadly, do not have the money to pay an annual fee to Apple just to satisfy this requirement in MacOS.</p>
       <p>To work around it, please view this <a href="https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac">page</a><br></p>
-      <h3>Docker</h3>
+      <h3><img src="images/icons/docker-logo-01.png" width="32">&nbsp;&nbsp;Docker</h3>
       <p><span class="bolded">Using a Docker Container for Plex Media Server</span><br>
       If you are using a Docker container for Plex Media Server and you access your Plex Media Server from a different IP Address to that of the Docker container, then you should enter the Plex Media Server URL into the <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">Plex &gt; Settings &gt; Network &gt; Custom server access URLs</code> box like so:<br>
       <br>
@@ -150,8 +150,8 @@
   <!-- footer section start -->
   <div class="footer_section layout_padding">
     <div class="container">
-      <p class="center">WebTools-NG is an independent project and is NOT associated with Plex Inc.<br>
-      Use of this program is at your own risk, no responsibility is taken from either Plex Inc. or the developers of this program.</p>
+      <p class="center">WebTools-NG is an independent project and is NOT associated with <a href="https://www.plex.tv">Plex Inc.</a><br>
+        Use of this program is at your own risk, no responsibility is taken by WebTools-NG or Plex Inc.</p>
     </div>
   </div><!-- footer section end -->
   <!-- copyright section start -->
