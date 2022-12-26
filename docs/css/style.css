@@ -382,7 +382,7 @@ button {
 .banner_section {
     width: 100%;
     float: left;
-    padding-bottom: 305px;
+    padding-bottom: 95px;
 }
 
 .banner_taital {
@@ -610,7 +610,7 @@ button {
     height: auto;
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-bottom: 345px;
+    padding-bottom: 145px;
     padding-top: 200px;
 }
 
@@ -620,26 +620,25 @@ button {
     font-size: 40px;
     color: #ffffff;
     font-weight: bold;
-    padding-top: 30px;
+    padding-top: 100px;
     text-align: center;
-    text-shadow: 2px 2px 0px #000000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    text-shadow: 2px 2px 0px black;
 }
 
 .blog_text {
     width: 80%;
     margin: 0 auto;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
     color: #ffffff;
     padding-top: 40px;
     text-align: center;
-    text-shadow: 1px 1px 0px #000000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    text-shadow: 2px 2px 1px black;
 }
 
 .play_icon_main {
     width: 100%;
-    margin-top: 150px;
-    float: left;
+    margin-top: 35px;
+    float: none;
 }
 
 .play_icon {
