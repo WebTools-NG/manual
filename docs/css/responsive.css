@@ -148,8 +148,8 @@
     }
     .blog_section {
         background-size: 100% 100%;
-        padding-bottom: 220px;
-        padding-top: 160px;
+        padding-bottom: 145px;
+        padding-top: 200px;
     }
     .play_icon_main {
         margin-top: 50px;
@@ -221,11 +221,11 @@
     }
     .blog_section {
         background-size: 100% 100%;
-        padding-bottom: 220px;
-        padding-top: 160px;
+        padding-bottom: 145px;
+        padding-top: 200px;
     }
     .play_icon_main {
-        margin-top: 50px;
+        margin-top: 35px;
     }
     .client_taital {
         padding-top: 0px;
@@ -382,7 +382,7 @@
         width: 100%;
     }
     .play_icon_main {
-        margin-top: 40px;
+        margin-top: 35px;
     }
     .play_icon {
         width: 145px;
@@ -574,7 +574,7 @@
     .blog_section {
         background-image: url(../images/blog-mobile-bg.png);
         background-size: cover;
-        padding: 50px 0px;
+        padding: 0px 0px;
     }
     .blog_text {
         width: 100%;
