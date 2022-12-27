@@ -93,7 +93,7 @@
       <p>After downloading the WebTools-NG Installer package, install the package as required by your OS.</p>
       <p><span class="bolded">For Windows:</span><br>
       Double click on the WebTools-NG.exe file and follow the on screen prompts to install WebTools-NG.<br>
-      The default installation path is: <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">C:\Users\**Your User Name**\AppData\Local\Programs\webtools-ng</code></p>
+      The default installation path is: <span class="highlite">C:\Users\**Your User Name**\AppData\Local\Programs\webtools-ng</span></p>
       <p><span class="bolded">For Mac:</span><br>
       Double click on the WebTools-NG.dmg file and drag the WebTools-NG icon to the Applications folder.</p>
       <p><span class="bolded">For Linux:</span><br>
@@ -103,12 +103,12 @@
       <hr>
       <h2>To install and run the .appimage package using Ubuntu Linux</h2>
       <p><span class="bolded">Note:</span> <em>this package is intended for use on desktop PC's/Laptops and is NOT intended to be used on a NAS of any description.</em></p>
-      <p>Download the WebTools-NG.appimage package from the WebTools-NG Github page using Firefox or any other browser.</p>
+      <p>Download the WebTools-NG.appimage package from the <a href="https://github.com/WebTools-NG/WebTools-NG/releases">WebTools-NG Github page</a> using Firefox or any other browser.</p>
       <p>Then, navigate to the downloads folder, right click on the package and select Properties. On the Permissions tab, enable Allow executing file as program.</p>
-      <p>Then simply right click on the package and select <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">Run as program</code> to open WebTools-NG.</p>
+      <p>Then simply right click on the package and select <span class="highlite">Run as program</span> to open WebTools-NG.</p>
       <p>You may move the .appimage package to any location you wish.</p>
       <p>The process will be similar on other distributions of Linux, such as Mint, Debian, Fedora, etc...</p>
-      <p><span class="bolded">Note:</span> <em>In Ubuntu 22.04 or greater, you must install libfuse2 using this command in Terminal: <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">sudo apt install libfuse2</code> before you are able to run .appimage files. See this page for more details: <a href="https://itsfoss.com/cant-run-appimage-ubuntu/">It's Foss</a></em></p>
+      <p><span class="bolded">Note:</span> <em>In Ubuntu 22.04 or greater, you must install libfuse2 using this command in Terminal: <span class="highlite">sudo apt install libfuse2</span> before you are able to run .appimage files. See this page for more details: <a href="https://itsfoss.com/cant-run-appimage-ubuntu/">It's Foss</a></em></p>
       <hr>
       <h2>Login with your Plex credentials</h2>
       <h3>User tab</h3>
@@ -122,40 +122,40 @@
       <p><img src="images/general/loginwithtoken-01.png"></p>
       <p>Enter your Plex Token and then click on `Sign In`. You will then be taken to the WebTools-NG Welcome page.</p>
       <p>To find your Plex Token, see this page: <a href="https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/">Finding a Plex authentication token</a></p>
-      <p><span class="bolded">Note:</span> <span class="emphasized">Entering your Plex Token overrides the need to enter a password and a code to authenticate a 2FA login.</span></p>
+      <p><span class="bolded">Note:</span> <em>Entering your Plex Token overrides the need to enter a password and a code to authenticate a 2FA login.</em></p>
       <hr>
       <h3>Running the program from the commandline/terminal</h3>
       <p>After installing WebTools-NG on your PC/Laptop, you may use the following method to open and log into your Plex account automatically. If you simply run the executable by double clicking on it, you'll be prompted for your plex.tv credentials, but as an alternative, you may open the program from the commandline/terminal and append the following to the command.</p>
       <p>This will open WebTools-NG without needing to enter a password or 2FA code.<br>
       <br>
-      <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">X-Plex-Token=(Your_Plex_Token_Here)</code></p>
+      <span class="highlite">X-Plex-Token=(Your_Plex_Token_Here)</span></p>
       <p>The command may be added to a batch or script file to save entering the Plex token each time. You may then simply 'run' the batch/script file each time you wish to open WebTools-NG.</p>
       <p>You should use this method with caution, particularly if you add the commands to a script/batch file, as it may lead to any person/user or intruder having full access to your Plex Media Server/s.</p>
       <p>To find your Plex Token, see this page: <a href="https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/">Finding a Plex authentication token</a></p>
-      <p><span class="bolded">Note:</span> <span class="emphasized">Using this method removes the need to enter a password & code for 2FA logins.</span></p>
+      <p><span class="bolded">Note:</span> <em>Using this method removes the need to enter a password & code for 2FA logins.</em></p>
       <hr>
       <h3 id="for-windows">For Windows:</h3>
-      <p>Open a Command Prompt or Windows Terminal window and <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">cd</code> to the location of WebTools-NG.exe on your PC, then enter the following:<br>
+      <p>Open a Command Prompt or Windows Terminal window and <span class="highlite">cd</span> to the location of WebTools-NG.exe on your PC, then enter the following:<br>
       <br>
-      <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">WebTools-NG.exe X-Plex-Token=gfhjguhyt7466753wjhgdf</code></p>
-      <p>The default installation folder is: <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">C:\Users\**Your User Name**\AppData\Local\Programs\webtools-ng</code></p>
-      <p><span class="bolded">Note:</span> <span class="emphasized">The token shown above is bogus and will not work, you must use your own Plex token.</span></p>
+      <span class="highlite">WebTools-NG.exe X-Plex-Token=gfhjguhyt7466753wjhgdf</span></p>
+      <p>The default installation folder is: <span class="highlite">C:\Users\**Your User Name**\AppData\Local\Programs\webtools-ng</span></p>
+      <p><span class="bolded">Note:</span> <em>The token shown above is bogus and will not work, you must use your own Plex token.</em></p>
       <p>To find your Plex Token, see this page: <a href="https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/">Finding a Plex authentication token</a></p>
-      <p><span class="bolded">Note:</span> <span class="emphasized">Using this method removes the need to enter a password & code for 2FA logins.</span></p>
+      <p><span class="bolded">Note:</span> <em>Using this method removes the need to enter a password & code for 2FA logins.</em></p>
       <hr>
       <h3 id="for-mac">For Mac:</h3>
       <p>Open a Terminal window and enter the following:</p>
-      <p><code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">/Applications/WebTools-NG.app/Contents/MacOS/WebTools-NG X-Plex-Token=gfhjguhyt7466753wjhgdf</code></p>
-      <p><span class="bolded">Note:</span> <span class="emphasized">WebTools-NG must be installed in the Applications folder.</span><br>
-      <span class="bolded">Note:</span> <span class="emphasized">The token shown above is bogus and will not work, you must use your own Plex token.</span></p>
+      <p><span class="highlite">/Applications/WebTools-NG.app/Contents/MacOS/WebTools-NG X-Plex-Token=gfhjguhyt7466753wjhgdf</span></p>
+      <p><span class="bolded">Note:</span> <em>WebTools-NG must be installed in the Applications folder.</em><br>
+      <span class="bolded">Note:</span> <em>The token shown above is bogus and will not work, you must use your own Plex token.</em></p>
       <p>Alternatively, You may do the following on the Mac:</p>
       <p>- Locate WebTools-NG in the Applications folder using Finder<br>
-      - Right-click on WebTools-NG and select <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">Show Package Contents</code><br>
-      - Locate the executable file. (Contents/MacOS/<code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">WebTools-NG</code>)<br>
-      - Drag that file onto your blank Terminal command line and add <code style="color:darksalmon; font-size: 14px; font-family: Verdana, sans-serif;">X-Plex-Token=(your Plex token)</code><br>
+      - Right-click on WebTools-NG and select <span class="highlite">Show Package Contents</span><br>
+      - Locate the executable file. (Contents/MacOS/<span class="highlite">WebTools-NG</span>)<br>
+      - Drag that file onto your blank Terminal command line and add <span class="highlite">X-Plex-Token=(your Plex token)</span><br>
       - Leave your Terminal window open while you use the application</p>
       <p>To find your Plex Token, see this page: <a href="https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/">Finding a Plex authentication token</a></p>
-      <p><span class="bolded">Note:</span> <span class="emphasized">Using this method removes the need to enter a password & code for 2FA logins.</span></p>
+      <p><span class="bolded">Note:</span> <em>Using this method removes the need to enter a password & code for 2FA logins.</em></p>
       <hr>
       <p><a href="about-webtools-ng.html">Back</a> | <a href="configure.html">Next</a></p>
     </div>

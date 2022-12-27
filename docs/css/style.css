@@ -46,7 +46,7 @@ a:link {
     }
     
     a:hover {
-      color: red;
+      color: tomato;
       background-color: transparent;
       text-decoration: underline;
     }
@@ -57,12 +57,19 @@ a:link {
       text-decoration: underline;
     }
 
+/*--------------------------------------------------------------------- custom ---------------------------------------------------------------------*/
+
     .bolded { font-weight: bold; }
-    .emphasized { font-style: italic; }
     .center {
       text-align: center;
       color: silver;
     }
+    .highlite {
+      color:darksalmon;
+      font-size: 14px;
+      font-family: Verdana, Geneva, sans-serif;}
+
+/*--------------------------------------------------------------------- end custom ---------------------------------------------------------------------*/
 
 * {
     box-sizing: border-box !important;
