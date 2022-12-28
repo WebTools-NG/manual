@@ -62,6 +62,13 @@ a:link {
     .bolded { font-weight: bold; }
     .center {
       text-align: center;
+    }
+    .centa_1 {
+      font-size: 14px;
+      color: gray;
+    }
+    .centa_2 {
+      font-size: 16px;
       color: silver;
     }
     .highlite {
