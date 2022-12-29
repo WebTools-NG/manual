@@ -71,13 +71,13 @@ a:link {
       margin-left: 0px;
     }
     .centa_2 {
-      font-size: 15px;
+      font-size: 16px;
       color: silver;
       margin-left: 0px;
     }
     .highlite {
       color:darksalmon;
-      font-size: 15px;
+      font-size: 14px;
       font-family: Verdana, Geneva, sans-serif;
     }
 
@@ -119,7 +119,6 @@ h4,
 h5,
 h6 {
     letter-spacing: 0;
-    font-weight: normal;
     position: relative;
     padding: 0 0 10px 0;
     font-weight: normal;
