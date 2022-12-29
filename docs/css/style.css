@@ -63,19 +63,23 @@ a:link {
     .center {
       text-align: center;
       color: gray;
+      margin-left: 0px;
     }
     .centa_1 {
       font-size: 14px;
       color: gray;
+      margin-left: 0px;
     }
     .centa_2 {
-      font-size: 16px;
+      font-size: 15px;
       color: silver;
+      margin-left: 0px;
     }
     .highlite {
       color:darksalmon;
       font-size: 15px;
-      font-family: Verdana, Geneva, sans-serif;}
+      font-family: Verdana, Geneva, sans-serif;
+    }
 
 /*--------------------------------------------------------------------- end custom ---------------------------------------------------------------------*/
 
@@ -263,7 +267,7 @@ button {
 }
 
 .layout_padding {
-    padding-top: 120px;
+    padding-top: 90px;
     padding-bottom: 0px;
 }
 
@@ -623,7 +627,7 @@ button {
     width: 100%;
     float: left;
     background-image: url(../images/blog-bg.png);
-    height: auto;
+    height: 800px;
     background-repeat: no-repeat;
     background-size: 100%;
     padding-bottom: 35px;
