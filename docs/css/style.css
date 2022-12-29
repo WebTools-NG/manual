@@ -558,7 +558,7 @@ button {
 .about_section {
     width: 100%;
     float: left;
-    padding-bottom: 90px;
+    padding-bottom: 180px;
 }
 
 .about_taital_main {
@@ -627,10 +627,10 @@ button {
     width: 100%;
     float: left;
     background-image: url(../images/blog-bg.png);
-    height: 800px;
+    height: 630px;
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-bottom: 35px;
+    padding-bottom: 0px;
     padding-top: 200px;
 }
 
@@ -640,7 +640,7 @@ button {
     font-size: 40px;
     color: #ffffff;
     font-weight: bold;
-    padding-top: 100px;
+    padding-top: 60px;
     text-align: center;
     text-shadow: 2px 2px 0px black;
 }
