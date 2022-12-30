@@ -640,6 +640,7 @@ button {
     font-size: 40px;
     color: #ffffff;
     font-weight: bold;
+    padding-top: 60px;
     text-align: center;
     text-shadow: 2px 2px 1px black;
 }
@@ -649,16 +650,15 @@ button {
     margin: 0 auto;
     font-size: 16px;
     color: #ffffff;
-    padding-top: 0px;
+    padding-top: 40px;
     text-align: center;
     text-shadow: 2px 2px 1px black;
 }
 
 .play_icon_main {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 35px;
     float: none;
-    padding-bottom: 170px;
 }
 
 .play_icon {
@@ -981,17 +981,6 @@ button {
     width: 100%;
     float: left;
     background-image: url(../images/footer-bg.png);
-    height: auto;
-    padding-top: 250px;
-    background-size: 100% 100%;
-    padding-bottom: 30px;
-    background-repeat: no-repeat;
-}
-
-.footer_section_2 {
-    width: 100%;
-    float: left;
-    background-image: url(../images/blog-bg.png);
     height: auto;
     padding-top: 250px;
     background-size: 100% 100%;

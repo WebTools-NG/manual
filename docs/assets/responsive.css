@@ -148,8 +148,8 @@
     }
     .blog_section {
         background-size: 100% 100%;
-        padding-bottom: 145px;
-        padding-top: 200px;
+        padding-bottom: 220px;
+        padding-top: 160px;
     }
     .play_icon_main {
         margin-top: 50px;
@@ -192,11 +192,6 @@
         background-size: cover;
         padding-bottom: 30px;
     }
-    .footer_section_2 {
-        padding-top: 270px;
-        background-size: cover;
-        padding-bottom: 30px;
-    }
     .input_btn_main {
         width: 60%;
     }
@@ -226,11 +221,11 @@
     }
     .blog_section {
         background-size: 100% 100%;
-        padding-bottom: 145px;
-        padding-top: 200px;
+        padding-bottom: 220px;
+        padding-top: 160px;
     }
     .play_icon_main {
-        margin-top: 35px;
+        margin-top: 50px;
     }
     .client_taital {
         padding-top: 0px;
@@ -266,11 +261,6 @@
         width: 100%;
     }
     .footer_section {
-        padding-top: 230px;
-        background-size: cover;
-        padding-bottom: 30px;
-    }
-    .footer_section_2 {
         padding-top: 230px;
         background-size: cover;
         padding-bottom: 30px;
@@ -392,7 +382,7 @@
         width: 100%;
     }
     .play_icon_main {
-        margin-top: 35px;
+        margin-top: 40px;
     }
     .play_icon {
         width: 145px;
@@ -442,11 +432,6 @@
     }
     .footer_section {
         background-image: url(../images/footer-mobile-bg.png);
-        background-size: cover;
-        padding: 50px 0px;
-    }
-    .footer_section_2 {
-        background-image: url(../images/blog-mobile-bg.png);
         background-size: cover;
         padding: 50px 0px;
     }
@@ -589,7 +574,7 @@
     .blog_section {
         background-image: url(../images/blog-mobile-bg.png);
         background-size: cover;
-        padding: 0px 0px;
+        padding: 50px 0px;
     }
     .blog_text {
         width: 100%;
@@ -645,11 +630,6 @@
     }
     .footer_section {
         background-image: url(../images/footer-mobile-bg.png);
-        background-size: cover;
-        padding: 50px 0px;
-    }
-    .footer_section_2 {
-        background-image: url(../images/blog-mobile-bg.png);
         background-size: cover;
         padding: 50px 0px;
     }
