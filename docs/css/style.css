@@ -63,7 +63,7 @@ a:link {
     .center {
       text-align: center;
       color: gray;
-      margin-left: 0px;
+      margin-left: 0 auto;
       font-size: 14px;
     }
     .centa_1 {
