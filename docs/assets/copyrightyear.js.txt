@@ -1,3 +1,11 @@
-$(document).ready(function(){
-  $('.spanYear').text( new Date().getFullYear() );
-});
+// JQuery
+//
+// $(document).ready(function(){
+//  $('.spanYear').text( new Date().getFullYear() );
+// });
+
+// Vanilla Javascript
+
+window.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelector('.spanYear').innerHTML = new Date().getFullYear();
+})
