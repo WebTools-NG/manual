@@ -1,0 +1,1 @@
+<span class="spanYear"></span> - All Rights Reserved - WebTools-NG
