@@ -12,7 +12,8 @@
 }
 
 
-/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+/*****----------------------------------------
+ 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
  ----------------------------------------*****/
 
@@ -45,7 +46,7 @@ a:link {
     }
     
     a:hover {
-      color: red;
+      color: tomato;
       background-color: transparent;
       text-decoration: underline;
     }
@@ -56,8 +57,32 @@ a:link {
       text-decoration: underline;
     }
 
+/*--------------------------------------------------------------------- custom ---------------------------------------------------------------------*/
+
     .bolded { font-weight: bold; }
-    .emphasized { font-style: italic; }
+    .center {
+      text-align: center;
+      color: gray;
+      margin-left: 0 auto;
+      font-size: 14px;
+    }
+    .centa_1 {
+      font-size: 14px;
+      color: gray;
+      margin-left: 0px;
+    }
+    .centa_2 {
+      font-size: 16px;
+      color: silver;
+      margin-left: 0px;
+    }
+    .highlite {
+      color:darksalmon;
+      font-size: 14px;
+      font-family: Verdana, Geneva, sans-serif;
+    }
+
+/*--------------------------------------------------------------------- end custom ---------------------------------------------------------------------*/
 
 * {
     box-sizing: border-box !important;
@@ -95,7 +120,6 @@ h4,
 h5,
 h6 {
     letter-spacing: 0;
-    font-weight: normal;
     position: relative;
     padding: 0 0 10px 0;
     font-weight: normal;
@@ -260,7 +284,7 @@ button {
     background-image: url(../images/banner-bg.png);
     height: auto;
     background-size: 100%;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .bg-light {
@@ -271,7 +295,7 @@ button {
     width: 100%;
     float: left;
     text-align: center;
-    padding: 20px 0px 50px 0px;
+    padding: 20px 0px 30px 0px;
 }
 
 .logo_mobile {
@@ -377,7 +401,8 @@ button {
 .banner_section {
     width: 100%;
     float: left;
-    padding-bottom: 305px;
+    padding-bottom: 65px;
+    padding-top: 55px;
 }
 
 .banner_taital {
@@ -454,7 +479,7 @@ button {
 .services_section_2 {
     width: 100%;
     float: left;
-    margin-top: 90px;
+    margin-top: 180px;
 }
 
 .services_img {
@@ -494,16 +519,46 @@ button {
     background-color: #000d10;
 }
 
+/* button secondary start */
+.btn_sec {
+    width: 170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn_sec a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #000d10;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.btn_sec a:hover {
+    color: #ffffff;
+    background-color: #2b2278;
+}
+
+.btn_sec.active a {
+    color: #ffffff;
+    background-color: #2b2278;
+}
+/* button secondary end */
 
 /* services section end */
-
 
 /* about section start */
 
 .about_section {
     width: 100%;
     float: left;
-    padding-bottom: 90px;
+    padding-bottom: 220px;
 }
 
 .about_taital_main {
@@ -572,10 +627,10 @@ button {
     width: 100%;
     float: left;
     background-image: url(../images/blog-bg.png);
-    height: auto;
+    height: 630px;
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-bottom: 345px;
+    padding-bottom: 0px;
     padding-top: 200px;
 }
 
@@ -585,28 +640,29 @@ button {
     font-size: 40px;
     color: #ffffff;
     font-weight: bold;
-    padding-top: 30px;
     text-align: center;
+    text-shadow: 2px 2px 1px black;
 }
 
 .blog_text {
     width: 80%;
     margin: 0 auto;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
     color: #ffffff;
-    padding-top: 40px;
+    padding-top: 0px;
     text-align: center;
+    text-shadow: 2px 2px 1px black;
 }
 
 .play_icon_main {
     width: 100%;
-    margin-top: 150px;
-    float: left;
+    margin-top: 30px;
+    float: none;
+    padding-bottom: 185px;
 }
 
 .play_icon {
-    width: 200px;
+    width: 138px;
     margin: 0 auto;
     position: relative;
     z-index: 5;
@@ -932,6 +988,17 @@ button {
     background-repeat: no-repeat;
 }
 
+.footer_section_2 {
+    width: 100%;
+    float: left;
+    background-image: url(../images/index-bg.png);
+    height: auto;
+    padding-top: 230px;
+    background-size: 100% 100%;
+    padding-bottom: 30px;
+    background-repeat: no-repeat;
+}
+
 .input_btn_main {
     width: 50%;
     display: flex;
@@ -1021,14 +1088,14 @@ button {
 .copyright_section {
     width: 100%;
     float: left;
-    background-color: #122c2d;
+    background-color: #05171d;
     height: auto;
 }
 
 .copyright_text {
     width: 100%;
     float: left;
-    color: #ffffff;
+    color: silver;
     text-align: center;
     font-size: 16px;
     margin-left: 0px;

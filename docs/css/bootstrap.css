@@ -266,14 +266,14 @@ select {
 }
 
 button,
-html [type="button"],
+html [role="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
 }
 
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
+[role="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   padding: 0;
@@ -2949,7 +2949,7 @@ fieldset:disabled a.btn {
 
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
-input[type="button"].btn-block {
+input[role="button"].btn-block {
   width: 100%;
 }
 
