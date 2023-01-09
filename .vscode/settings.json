@@ -1,0 +1,8 @@
+{
+    "liveServer.settings.root": "/docs",
+    "liveServer.settings.port": 5500,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": ["javascript"]
+}
