@@ -4,7 +4,7 @@ class CopyrightMain extends HTMLElement {
        <div class="copyright_section">
           <div class="container">
              <p class="center"><span class="centa_1">WebTools-NG is an independent project and is NOT associated with Plex Inc.</span><br>
-             <span class="centa_2"><span id="spanYear"></span> - All Rights Reserved - WebTools-NG</span></p>
+             <span class="centa_2">2023 - All Rights Reserved - WebTools-NG</span></p>
           </div>
        </div>
     `;
@@ -16,7 +16,7 @@ class Copyright extends HTMLElement {
     this.innerHTML = `
        <div class="copyright_section">
           <div class="container">
-             <p class="copyright_text"><span id="spanYear"></span> - All Rights Reserved - WebTools-NG</p>
+             <p class="copyright_text">2023 - All Rights Reserved - WebTools-NG</p>
           </div>
        </div>
      `;
